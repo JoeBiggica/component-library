@@ -1,0 +1,103 @@
+@import 'styles/_colors.scss';
+@import 'styles/_eases.scss';
+
+.text-label {
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+
+	&[href] {
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	svg {
+		fill: currentColor;
+	}
+}
+
+.small-all-caps,
+.small-all-caps-spaced-out,
+.small-all-caps-no-spacing {
+	font-family: 'knowledge-medium', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.small-all-caps {
+	letter-spacing: 1px;
+}
+
+.small-all-caps-spaced-out {
+	letter-spacing: 2px;
+}
+
+.medium {
+	font-family: 'knowledge-medium', sans-serif;
+}
+
+.bold {
+	font-family: 'knowledge-bold', sans-serif;
+}
+
+.regular {
+	font-family: 'knowledge-regular', sans-serif;
+}
+
+.light {
+	font-family: 'knowledge-light', sans-serif;
+}
+
+.light-all-caps,
+.light-all-caps-no-spacing {
+	font-family: 'knowledge-light', sans-serif;
+	text-transform: uppercase;
+}
+
+.light-all-caps {
+	letter-spacing: 1px;
+}
+
+.serif {
+	font-family: 'freight-book', serif;
+}
+
+.serif-semi-bold {
+	font-family: 'freight-semibold', serif;
+}
+
+.gray-to-black,
+.gray-to-orange,
+.black-to-orange,
+.white-to-orange {
+	transition: color .25s $easeOutExpo;
+}
+
+.orange,
+.gray-to-orange:hover,
+.black-to-orange:hover,
+.white-to-orange:hover,
+.blue-to-orange:hover {
+	color: $orange;
+}
+
+.gray,
+.gray-to-black,
+.gray-to-orange {
+	color: $small-text-gray;
+}
+
+.black,
+.black-to-orange,
+.gray-to-black:hover {
+	color: $almost-black;
+}
+
+.white,
+.white-to-orange {
+	color: white;
+}
+
+.blue,
+.blue-to-orange {
+	color: $blue;
+}

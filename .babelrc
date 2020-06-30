@@ -1,0 +1,117 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": "current",
+            },
+            "useBuiltIns": "usage",
+            "debug": true
+          }
+        ],
+        "@babel/preset-react",
+      ],
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": ["./"],
+            "alias": {
+              "components": "./components",
+              "styles": "./styles",
+            }
+          }
+        ],
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-proposal-export-default-from",
+        "inline-react-svg",
+      ]
+    },
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": "current",
+            },
+            "useBuiltIns": "usage",
+            "corejs": 2
+          }
+        ],
+        "@babel/preset-react",
+      ],
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": ["./"],
+            "alias": {
+              "components": "./components",
+              "styles": "./styles",
+            }
+          }
+        ],
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-proposal-export-default-from",
+        "inline-react-svg",
+      ]
+    },
+    "lib": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": "current",
+              "android": "4.2",
+              "chrome": "58",
+              "edge": "12",
+              "firefox": "52",
+              "ie": "11",
+              "ios": "8",
+              "safari": "9.0",
+              //"esmodules": true,
+            },
+            "useBuiltIns": "usage",
+            "debug": true,
+            "modules": false,
+          },
+        ],
+        "@babel/preset-react",
+      ],
+      "plugins": [
+        [
+          "css-modules-transform",
+          {
+            "preprocessCss": "./module-exporting.js",
+            "importPathFormatter": "./import-path-formatter.js",
+            "keepImport": true,
+            "extensions": [".scss"],
+            "extractCss": {
+              "dir": "./lib",
+              "relativeRoot": "./components",
+              "filename": "[path]/[name].css",
+            },
+          }
+        ],
+        [
+          "module-resolver",
+          {
+            "root": ["./"],
+            "alias": {
+              "components": "./components",
+              "styles": "./styles",
+            },
+          }
+        ],
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-proposal-export-default-from",
+        "inline-react-svg",
+      ],
+    },
+  },
+}

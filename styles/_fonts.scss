@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'knowledge-light';
+	font-display: fallback;
+  	src: url('./fonts/knowledge-light.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'knowledge-regular';
+	font-display: fallback;
+  	src: url('./fonts/knowledge-regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'knowledge-medium';
+	font-display: fallback;
+  	src: url('./fonts/knowledge-medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'knowledge-bold';
+	font-display: fallback;
+  	src: url('./fonts/knowledge-bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'freight-book';
+	font-display: fallback;
+	src: url('./fonts/freight-text-book.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'freight-semibold';
+	font-display: fallback;
+	src: url('./fonts/freight-text-semibold.woff') format('woff');
+}

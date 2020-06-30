@@ -1,0 +1,18 @@
+/*  imported from TabbedTickerTapes.scss  */
+
+.TabbedTickerTapes__tabs-container___IzToq {
+  position: relative; }
+
+.TabbedTickerTapes__sponsor-logo___1b9BQ {
+  width: 186px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  z-index: 9999999; }
+
+.TabbedTickerTapes__tabs___YuiFr li:first-child {
+  margin-left: 0; }
+
+.TabbedTickerTapes__tabs___YuiFr p {
+  font-size: 12px;
+  letter-spacing: .4px; }

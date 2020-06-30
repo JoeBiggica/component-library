@@ -1,0 +1,33 @@
+@import 'styles/_colors.scss';
+
+.input {
+	caret-color: $orange;
+	font-size: 14px;
+	font-family: 'knowledge-regular', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	border: none;
+	outline: none;
+	padding: 0;
+
+	&::placeholder {
+		color: inherit;
+		font: inherit;
+		opacity: 0.5;
+	}
+}
+
+.orange {
+	color: $orange;
+}
+
+.gray {
+	color: $small-text-gray;
+}
+
+.black {
+	color: $almost-black;
+}
+
+.white {
+	color: white;
+}

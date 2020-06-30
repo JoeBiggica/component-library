@@ -1,0 +1,9 @@
+{
+	"editor.formatOnSave": true,
+	"eslint.enable": false,
+	"xo.enable": true,
+	"xo.format.enable": true,
+	"xo.options": {
+		"prettier": true
+	}
+}

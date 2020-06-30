@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../components/navbutton/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT","sourcesContent":["export { default } from './NavButton';\n"],"file":"index.js"}

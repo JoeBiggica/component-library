@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../components/textlabel/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT","sourcesContent":["export { default } from './TextLabel';\n"],"file":"index.js"}

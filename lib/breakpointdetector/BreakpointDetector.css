@@ -1,0 +1,31 @@
+/*  imported from BreakpointDetector.scss  */
+
+.BreakpointDetector__container___2fuT_ {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; }
+  .BreakpointDetector__container___2fuT_ span {
+    display: none;
+    padding: 10px;
+    font-size: 12px;
+    color: white;
+    background: navy;
+    font-family: sans-serif; }
+    @media (max-width: 599px) {
+      .BreakpointDetector__container___2fuT_ span.BreakpointDetector__for-phone-only___4_LFl {
+        display: inline-block; } }
+    @media (min-width: 600px) {
+      .BreakpointDetector__container___2fuT_ span.BreakpointDetector__for-tablet-portrait-up___3JyHf {
+        display: inline-block; } }
+    @media (min-width: 1024px) {
+      .BreakpointDetector__container___2fuT_ span.BreakpointDetector__for-tablet-landscape-up___1WuSv {
+        display: inline-block; } }
+    @media (min-width: 1280px) {
+      .BreakpointDetector__container___2fuT_ span.BreakpointDetector__for-desktop-up___3y1_j {
+        display: inline-block; } }
+    @media (min-width: 1600px) {
+      .BreakpointDetector__container___2fuT_ span.BreakpointDetector__for-wide-desktop-up___1ZVju {
+        display: inline-block; } }
+  .BreakpointDetector__container___2fuT_:not(.BreakpointDetector__debug___2G7Er) {
+    display: none; }

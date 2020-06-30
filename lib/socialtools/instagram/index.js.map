@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../components/socialtools/instagram/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT","sourcesContent":["export { default } from './Instagram';\n"],"file":"index.js"}

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StickyContainer /> should render StickContainer correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div />
+    <div
+      style="height: calc(100% - 0px);"
+    />
+    <div
+      class="content"
+    />
+  </div>
+</div>
+`;

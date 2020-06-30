@@ -1,0 +1,56 @@
+/*  imported from Image.scss  */
+
+@keyframes Image__fadein___agl3V {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.Image__size-container___1F01j {
+  margin: 0 auto;
+  height: inherit; }
+
+.Image__image-container___3XUvb {
+  position: relative;
+  height: inherit;
+  z-index: 0; }
+  .Image__image-container___3XUvb.Image__logo-light___1o9eH:after, .Image__image-container___3XUvb.Image__logo-dark___gBP8T:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: auto 35%;
+    background-position: center center;
+    opacity: .1; }
+  .Image__image-container___3XUvb.Image__logo-light___1o9eH {
+    background-color: #e6e6e6; }
+    .Image__image-container___3XUvb.Image__logo-light___1o9eH:after {
+      background-image: url(./five-rings-black.svg); }
+  .Image__image-container___3XUvb.Image__logo-dark___gBP8T {
+    background-color: #313132; }
+    .Image__image-container___3XUvb.Image__logo-dark___gBP8T:after {
+      background-image: url(./five-rings-white.svg); }
+
+.Image__image-container___3XUvb:not(.Image__loaded___2w56Y) .Image__image___6wPci {
+  display: none; }
+
+.Image__image___6wPci {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  animation: Image__fadein___agl3V 0.25s cubic-bezier(0.25, 0.1, 0.25, 1) both; }
+  .Image__image___6wPci.Image__fit___1uHCx {
+    object-fit: contain; }
+  .Image__image___6wPci.Image__cover___2NcXy {
+    object-fit: cover; }
+
+.Image__lock-ratio___s5qTP .Image__image___6wPci {
+  position: absolute;
+  height: 100%; }

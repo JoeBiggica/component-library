@@ -1,0 +1,23 @@
+.container {
+	position: relative;
+}
+
+.content {
+	width: inherit;
+
+	&:not(.bottom) {
+		top: 0;
+	}
+
+	&:not(.disabled) {
+		position: absolute;
+
+		&.sticky {
+			position: fixed;
+		}
+
+		&.bottom {
+			bottom: 0;
+		}
+	}
+}

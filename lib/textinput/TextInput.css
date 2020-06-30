@@ -1,0 +1,26 @@
+/*  imported from TextInput.scss  */
+
+.TextInput__input___3rUAP {
+  caret-color: #F06F21;
+  font-size: 14px;
+  font-family: 'knowledge-regular', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  border: none;
+  outline: none;
+  padding: 0; }
+  .TextInput__input___3rUAP::placeholder {
+    color: inherit;
+    font: inherit;
+    opacity: 0.5; }
+
+.TextInput__orange___vBrTJ {
+  color: #F06F21; }
+
+.TextInput__gray___1mTlx {
+  color: #717375; }
+
+.TextInput__black___3rakL {
+  color: #313132; }
+
+.TextInput__white___30aUB {
+  color: white; }
