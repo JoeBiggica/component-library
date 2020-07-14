@@ -1,35 +1,26 @@
-@font-face {
-	font-family: 'knowledge-light';
-	font-display: fallback;
-  	src: url('./fonts/knowledge-light.woff') format('woff');
+@mixin avenir-light {
+	font-family: 'Avenir', helvetica, arial, sans-serif;
+	font-weight: lighter;	
 }
 
-@font-face {
-	font-family: 'knowledge-regular';
-	font-display: fallback;
-  	src: url('./fonts/knowledge-regular.woff') format('woff');
+@mixin avenir {
+	font-family: 'Avenir', helvetica, arial, sans-serif;	
 }
 
-@font-face {
-	font-family: 'knowledge-medium';
-	font-display: fallback;
-  	src: url('./fonts/knowledge-medium.woff') format('woff');
+@mixin avenir-bold {
+	font-family: 'Avenir', helvetica, arial, sans-serif;	
+	font-weight: bold;
 }
 
-@font-face {
-	font-family: 'knowledge-bold';
-	font-display: fallback;
-  	src: url('./fonts/knowledge-bold.woff') format('woff');
+@mixin futura {
+	font-family: 'Futura', helvetica, arial, sans-serif;	
 }
 
-@font-face {
-	font-family: 'freight-book';
-	font-display: fallback;
-	src: url('./fonts/freight-text-book.woff') format('woff');
+@mixin georgia {
+	font-family: 'Georgia', 'Times New Roman', sans-serif;	
 }
 
-@font-face {
-	font-family: 'freight-semibold';
-	font-display: fallback;
-	src: url('./fonts/freight-text-semibold.woff') format('woff');
+@mixin georgia-bold {
+	font-family: 'Georgia', 'Times New Roman', sans-serif;
+	font-weight: bold;
 }
