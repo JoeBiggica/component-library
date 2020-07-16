@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { useState, useRef } from 'react';
@@ -11,6 +12,7 @@ const trans_title = (x, y) => `translate3d(${x / 5}px,${y / 50}px,0)`;
 function SpringImage(props) {
 	const {
 		className,
+		style,
 		image_url,
 		title
 	} = props;
@@ -32,13 +34,16 @@ function SpringImage(props) {
 	}
 
 	return (
-		<div className={classnames(styles('container'), className)}>
+		<div 
+			className={classnames(styles['container'], className)}
+			style={style}
+		>
 			<div 
 				onMouseMove={({ clientX: x, clientY: y }) => setAnimateProps({ xy: calc(0, 0) })}
 				onMouseLeave={() => setAnimateProps({ xy: [0, 0] })}
 			>
 				<animated.div 
-					className={styles('image')} 
+					className={classnames(styles['image'])} 
 					style={{ 
 						transform: amimateProps.xy.interpolate(trans_image),
 						...image_styles
@@ -46,7 +51,7 @@ function SpringImage(props) {
 				/>
 				{title &&
 					<animated.div
-						className={styles('title')} 
+						className={classnames(styles['title'])} 
 						style={{ 
 							transform: amimateProps.xy.interpolate(trans_title)
 						}} 
@@ -62,6 +67,7 @@ function SpringImage(props) {
 
 SpringImage.propTypes = {
 	className: PropTypes.string,
+	style: PropTypes.object,
 	image_url: PropTypes.string
 };
 

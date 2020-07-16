@@ -24,7 +24,9 @@
 		"url": "https://github.com/JoeBiggica/component-library/issues"
 	},
 	"homepage": "https://github.com/JoeBiggica/component-library#readme",
-	"dependencies": {},
+	"dependencies": {
+		"react-spring": "^8.0.27"
+	},
 	"peerDependencies": {
 		"react": "^16.8.0",
 		"react-dom": "^16.8.0"
