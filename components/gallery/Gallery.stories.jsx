@@ -9,6 +9,20 @@ const black_bg = {
 	value: '#000',
 };
 
+const images = [
+	{
+		"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_01.jpg"
+	},
+	{
+		"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_02.jpg"
+	},
+	{
+		"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_03.jpg"
+	},
+	{
+		"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_04.jpg"
+	}
+];
 
 storiesOf('component-library/Gallery', module)
 	.addDecorator(centered)
@@ -17,9 +31,9 @@ storiesOf('component-library/Gallery', module)
 		<div style={{margin: '40px'}}>
 			<Gallery
 				style={object('style', {
-					width: '800px'
+					width: '100%'
 				})}
-				image_url='https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/tesla/Tesla_01.jpg'
+				images={images}
 			/>
 		</div>
 	), {

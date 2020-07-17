@@ -4,10 +4,8 @@ import centered from '@storybook/addon-centered/react';
 import { withKnobs, text, number, select, object } from '@storybook/addon-knobs';
 import BackdropImage from './BackdropImage';
 
-
-const getSrc = w => `https://s3.reutersmedia.net/resources/r/?m=02&d=20190724&t=2&i=1411634561&r=LYNXNPEF6N276&w=${w}`;
-const src = getSrc(300);
-const srcSet = `${getSrc(300)} 300w, ${getSrc(768)} 768w, ${getSrc(1280)} 1280w`;
+const src = 'https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/images/misc/double-dragon-mural.jpg';
+const srcSet = `${src} 300w, ${src} 768w, ${src} 1280w`;
 
 const placeholder_options = {
 	...BackdropImage.Placeholder,

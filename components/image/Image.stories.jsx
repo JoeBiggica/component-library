@@ -27,9 +27,9 @@ storiesOf('component-library/Image', module)
 				width: '100vw',
 				maxWidth: '380px',
 			})}
-			src={text('src', 'https://pictures.reuters.com/Doc/RTR/Media/TR3_UNWATERMARKED/d/e/5/1/RTS2NYXF.jpg')}
+			src={text('src', 'https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/images/misc/double-dragon-mural.jpg')}
 			aspect_ratio={number('aspect_ratio', 380/249)}
-			alt={text('alt', 'Queen allows Johnson to suspend parliament')}
+			alt={text('alt', 'Picture from the Wong Fei Hung Museum')}
 		/>
 	))
 	.add('fill mode and placeholder', () => (
@@ -40,7 +40,7 @@ storiesOf('component-library/Image', module)
 			})}
 			fill_mode={select('fill_mode', Image.FillMode, Image.FillMode.FIT)}
 			placeholder={select('placeholder', placeholder_options, Image.Placeholder.LOGO_LIGHT)}
-			src={text('src', 'https://pictures.reuters.com/Doc/RTR/Media/TR3_UNWATERMARKED/d/e/5/1/RTS2NYXF.jpg')}
-			alt={text('alt', 'Queen allows Johnson to suspend parliament')}
+			src={text('src', 'https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/images/misc/double-dragon-mural.jpg')}
+			alt={text('alt', 'Picture from the Wong Fei Hung Museum')}
 		/>
 	));

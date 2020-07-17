@@ -10,7 +10,7 @@ storiesOf('component-library/ArrowLink', module)
 	.add('default', () => {
 		return (
 			<ArrowLink
-				text={text('text', 'Dracarys')}
+				text={text('text', 'Click here')}
 				href={text('href', '/')}
 				target={text('target', '_blank')}
 			/>

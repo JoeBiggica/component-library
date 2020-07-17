@@ -13,25 +13,6 @@ export default class Gallery extends Component {
 		images: PropTypes.array
 	}
 
-	constructor(props) {
-		super(props);
-
-		this.images = [
-			{
-				"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_01.jpg"
-			},
-			{
-				"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_02.jpg"
-			},
-			{
-				"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_03.jpg"
-			},
-			{
-				"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_04.jpg"
-			}
-		];
-	}
-
 	state = {
 		lightbox_active: false
 	}
@@ -142,7 +123,8 @@ export default class Gallery extends Component {
 	render() {
 		const {
 			style,
-			className
+			className,
+			images
 		} = this.props;
 
 		const {
@@ -156,7 +138,7 @@ export default class Gallery extends Component {
 				className={classnames(styles['container'], className)}
 			>
 				<div className={classnames(styles['image-list'])}>
-					{ this.images && this.images.map(this.renderImage) }
+					{ images && images.map(this.renderImage) }
 				</div>
 				{ lightbox_active && 
 					<LightBox
