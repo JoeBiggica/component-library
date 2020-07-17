@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
@@ -11,8 +12,8 @@ function LightBox(props) {
 
 
 	return (
-		<div className={styles('container')} onClick={onClick}>
-			<div className={styles('inner')}>
+		<div className={classnames(styles['container'])} onClick={onClick}>
+			<div className={classnames(styles['inner'])}>
 				{children}
 			</div>
 		</div>
