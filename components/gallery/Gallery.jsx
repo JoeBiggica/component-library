@@ -7,7 +7,7 @@ import styles from './Gallery.scss';
 
 export default class Gallery extends Component {
 
-	propTypes = {
+	static propTypes = {
 		style: PropTypes.object,
 		className: PropTypes.string,
 		images: PropTypes.array

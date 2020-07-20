@@ -20,7 +20,13 @@
 		width: 100%;
 		margin-bottom: 30px;
 		box-shadow: 10px 10px 20px $black;
+		transition: filter .25 $easeOutExpo;
 		cursor: zoom-in;
+
+		&:hover {
+			filter: brightness(0.75);
+		}
+
 
 		@include for-tablet-portrait-up {
 			width: 45%;

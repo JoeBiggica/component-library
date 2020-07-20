@@ -12,10 +12,21 @@
 }
 
 .inner {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	overflow: auto;
 	width: 100vw;
     height: 100vh;
+}
+
+.close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 30px;
+	padding: 5px;
+	fill: $white;
+	cursor: pointer;
 }
