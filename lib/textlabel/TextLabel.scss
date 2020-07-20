@@ -1,4 +1,5 @@
 @import 'styles/_colors.scss';
+@import 'styles/_fonts.scss';
 @import 'styles/_eases.scss';
 
 .text-label {
@@ -18,7 +19,7 @@
 .small-all-caps,
 .small-all-caps-spaced-out,
 .small-all-caps-no-spacing {
-	font-family: 'knowledge-medium', sans-serif;
+	@include avenir;
 	font-size: 12px;
 	text-transform: uppercase;
 }
@@ -31,25 +32,21 @@
 	letter-spacing: 2px;
 }
 
-.medium {
-	font-family: 'knowledge-medium', sans-serif;
-}
-
 .bold {
-	font-family: 'knowledge-bold', sans-serif;
+	@include avenir-bold;
 }
 
 .regular {
-	font-family: 'knowledge-regular', sans-serif;
+	@include avenir;
 }
 
 .light {
-	font-family: 'knowledge-light', sans-serif;
+	@include avenir-light;
 }
 
 .light-all-caps,
 .light-all-caps-no-spacing {
-	font-family: 'knowledge-light', sans-serif;
+	@include avenir-light;
 	text-transform: uppercase;
 }
 
@@ -58,11 +55,11 @@
 }
 
 .serif {
-	font-family: 'freight-book', serif;
+	@include georgia;
 }
 
 .serif-semi-bold {
-	font-family: 'freight-semibold', serif;
+	@include georgia-bold;
 }
 
 .gray-to-black,

@@ -12,7 +12,7 @@
 .TextLabel__small-all-caps___2Z2RG,
 .TextLabel__small-all-caps-spaced-out___3O9H4,
 .TextLabel__small-all-caps-no-spacing___3Ic1_ {
-  font-family: 'knowledge-medium', sans-serif;
+  font-family: 'Avenir', helvetica, arial, sans-serif;
   font-size: 12px;
   text-transform: uppercase; }
 
@@ -22,31 +22,32 @@
 .TextLabel__small-all-caps-spaced-out___3O9H4 {
   letter-spacing: 2px; }
 
-.TextLabel__medium___t9PWg {
-  font-family: 'knowledge-medium', sans-serif; }
-
 .TextLabel__bold___nuCHW {
-  font-family: 'knowledge-bold', sans-serif; }
+  font-family: 'Avenir', helvetica, arial, sans-serif;
+  font-weight: bold; }
 
 .TextLabel__regular___2X0ym {
-  font-family: 'knowledge-regular', sans-serif; }
+  font-family: 'Avenir', helvetica, arial, sans-serif; }
 
 .TextLabel__light___1WILL {
-  font-family: 'knowledge-light', sans-serif; }
+  font-family: 'Avenir', helvetica, arial, sans-serif;
+  font-weight: lighter; }
 
 .TextLabel__light-all-caps___13-vF,
 .TextLabel__light-all-caps-no-spacing___pcfh5 {
-  font-family: 'knowledge-light', sans-serif;
+  font-family: 'Avenir', helvetica, arial, sans-serif;
+  font-weight: lighter;
   text-transform: uppercase; }
 
 .TextLabel__light-all-caps___13-vF {
   letter-spacing: 1px; }
 
 .TextLabel__serif___3lOpX {
-  font-family: 'freight-book', serif; }
+  font-family: 'Georgia', 'Times New Roman', sans-serif; }
 
 .TextLabel__serif-semi-bold___2-G6G {
-  font-family: 'freight-semibold', serif; }
+  font-family: 'Georgia', 'Times New Roman', sans-serif;
+  font-weight: bold; }
 
 .TextLabel__gray-to-black___PGjdw,
 .TextLabel__gray-to-orange___3Bor1,
@@ -77,4 +78,4 @@
 
 .TextLabel__blue___3HUIK,
 .TextLabel__blue-to-orange___1SFN2 {
-  color: #128fdd; }
+  color: #02AEEF; }

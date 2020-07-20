@@ -1,0 +1,27 @@
+/*  imported from LightBox.scss  */
+
+.LightBox__container___3NzL1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75); }
+
+.LightBox__inner___cHFtm {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  width: 100vw;
+  height: 100vh; }
+
+.LightBox__close___3wtmf {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  padding: 5px;
+  fill: #fff;
+  cursor: pointer; }

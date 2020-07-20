@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../components/gallery/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT","sourcesContent":["export { default } from './Gallery';\n"],"file":"index.js"}
