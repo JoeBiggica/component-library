@@ -19,17 +19,13 @@ const Color = {
 };
 
 const Font = {
-	LIGHT: 'light',
-	LIGHT_ALL_CAPS: 'light-all-caps',
-	LIGHT_ALL_CAPS_NO_SPACING: 'light-all-caps-no-spacing',
-	SMALL_ALL_CAPS: 'small-all-caps',
-	SMALL_ALL_CAPS_NO_SPACING: 'small-all-caps-no-spacing',
-	SMALL_ALL_CAPS_SPACED_OUT: 'small-all-caps-spaced-out',
-	REGULAR: 'regular',
-	MEDIUM: 'medium',
-	BOLD: 'bold',
-	SERIF: 'serif',
-	SERIF_SEMI_BOLD: 'serif-semi-bold'
+	AVENIR: 'avenir',
+	AVENIR_LIGHT: 'avenir-light',
+	AVENIR_BOLD: 'avenir-bold',
+	FUTURA: 'futura',
+	FUTURA_BOLD: 'futura-bold',
+	GEORGIA: 'georgia',
+	GEORGIA_BOLD: 'georgia-bold'
 };
 
 const color_values = Object.values(Color);
@@ -102,8 +98,8 @@ TextLabel.propTypes = {
 };
 
 TextLabel.defaultProps = {
-	color: Color.GRAY,
-	font: Font.SMALL_ALL_CAPS,
+	color: Color.BLACK,
+	font: Font.AVENIR,
 	tag: 'p',
 	handleClick: () => {}
 };

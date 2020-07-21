@@ -13,7 +13,7 @@ const black_bg = {
 	default: true,
 };
 
-const example_text = 'Sri Lanka police chief refuses to quit';
+const example_text = 'This is the TextLabel text.';
 
 
 storiesOf('component-library/TextLabel', module)

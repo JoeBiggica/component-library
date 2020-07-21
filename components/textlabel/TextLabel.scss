@@ -16,51 +16,34 @@
 	}
 }
 
-.small-all-caps,
-.small-all-caps-spaced-out,
-.small-all-caps-no-spacing {
+.avenir {
 	@include avenir;
-	font-size: 12px;
-	text-transform: uppercase;
 }
 
-.small-all-caps {
-	letter-spacing: 1px;
+.avenir-light {
+	@include avenir-light;
 }
 
-.small-all-caps-spaced-out {
-	letter-spacing: 2px;
-}
-
-.bold {
+.avenir-bold {
 	@include avenir-bold;
 }
 
-.regular {
-	@include avenir;
+.futura {
+	@include futura;
 }
 
-.light {
-	@include avenir-light;
+.futura-bold {
+	@include futura-bold;
 }
 
-.light-all-caps,
-.light-all-caps-no-spacing {
-	@include avenir-light;
-	text-transform: uppercase;
-}
-
-.light-all-caps {
-	letter-spacing: 1px;
-}
-
-.serif {
+.georgia {
 	@include georgia;
 }
 
-.serif-semi-bold {
+.georgia-bold {
 	@include georgia-bold;
 }
+
 
 .gray-to-black,
 .gray-to-orange,
