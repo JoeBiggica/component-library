@@ -80,6 +80,7 @@ export default class Gallery extends Component {
 	renderImage = (image, index) => {
 		const {
 			url,
+			small_url,
 			long_image
 		} = image;
 
@@ -113,7 +114,7 @@ export default class Gallery extends Component {
 		return (
 			<img 
 				key={`image-${index}`}
-				src={url} 
+				src={small_url ? small_url : url} 
 				loading='lazy' 
 				onClick={() => this.openLightBox(lightbox_image)}
 			/>

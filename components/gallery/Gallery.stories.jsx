@@ -11,17 +11,29 @@ const black_bg = {
 
 const images = [
 	{
-		"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_01.jpg"
+		"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-01.png",
+		"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-01-small.png"
 	},
 	{
-		"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_02.jpg"
+		"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-02.png",
+		"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-02-small.png"
 	},
 	{
-		"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_03.jpg"
+		"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-03.png",
+		"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-03-small.png"
 	},
 	{
-		"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_04.jpg"
-	}
+		"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-01.png",
+		"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-01-small.png"
+	},
+	{
+		"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-02.png",
+		"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-02-small.png"
+	},
+	{
+		"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-03.png",
+		"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-03-small.png"
+	},
 ];
 
 storiesOf('component-library/Gallery', module)
