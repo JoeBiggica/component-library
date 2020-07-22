@@ -9,43 +9,28 @@
   .TextLabel__text-label___3oCVw svg {
     fill: currentColor; }
 
-.TextLabel__small-all-caps___2Z2RG,
-.TextLabel__small-all-caps-spaced-out___3O9H4,
-.TextLabel__small-all-caps-no-spacing___3Ic1_ {
-  font-family: 'Avenir', helvetica, arial, sans-serif;
-  font-size: 12px;
-  text-transform: uppercase; }
-
-.TextLabel__small-all-caps___2Z2RG {
-  letter-spacing: 1px; }
-
-.TextLabel__small-all-caps-spaced-out___3O9H4 {
-  letter-spacing: 2px; }
-
-.TextLabel__bold___nuCHW {
-  font-family: 'Avenir', helvetica, arial, sans-serif;
-  font-weight: bold; }
-
-.TextLabel__regular___2X0ym {
+.TextLabel__avenir___a8HQj {
   font-family: 'Avenir', helvetica, arial, sans-serif; }
 
-.TextLabel__light___1WILL {
+.TextLabel__avenir-light___1llID {
   font-family: 'Avenir', helvetica, arial, sans-serif;
   font-weight: lighter; }
 
-.TextLabel__light-all-caps___13-vF,
-.TextLabel__light-all-caps-no-spacing___pcfh5 {
+.TextLabel__avenir-bold___3ABwR {
   font-family: 'Avenir', helvetica, arial, sans-serif;
-  font-weight: lighter;
-  text-transform: uppercase; }
+  font-weight: bold; }
 
-.TextLabel__light-all-caps___13-vF {
-  letter-spacing: 1px; }
+.TextLabel__futura___3zEYZ {
+  font-family: 'Futura', helvetica, arial, sans-serif; }
 
-.TextLabel__serif___3lOpX {
+.TextLabel__futura-bold___2YKR6 {
+  font-family: 'Futura', helvetica, arial, sans-serif;
+  font-weight: bold; }
+
+.TextLabel__georgia___4HVJ_ {
   font-family: 'Georgia', 'Times New Roman', sans-serif; }
 
-.TextLabel__serif-semi-bold___2-G6G {
+.TextLabel__georgia-bold___pDTGm {
   font-family: 'Georgia', 'Times New Roman', sans-serif;
   font-weight: bold; }
 
