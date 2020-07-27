@@ -8,7 +8,7 @@
 	"scripts": {
 		"test": "jest",
 		"test:watch": "jest --watch",
-		"dev": "start-storybook -c .storybook -s ./ -p 1999",
+		"dev": "start-storybook -c .storybook -s ./ -p 1983",
 		"build": "rm -rf ./lib && BABEL_ENV=lib babel ./components --out-dir ./lib  --source-maps --copy-files",
 		"lint": "xo",
 		"static": "BABEL_ENV=test build-storybook -c .storybook -o ./build-storybook"
