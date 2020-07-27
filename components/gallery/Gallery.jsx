@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import LightBox from 'components/lightbox';
+import SpringImage from 'components/springimage';
 
 import styles from './Gallery.scss';
 
@@ -10,7 +11,9 @@ export default class Gallery extends Component {
 	static propTypes = {
 		style: PropTypes.object,
 		className: PropTypes.string,
-		images: PropTypes.array
+		images: PropTypes.array,
+		spring: PropTypes.bool,
+		image_style: PropTypes.object
 	}
 
 	state = {
@@ -84,6 +87,30 @@ export default class Gallery extends Component {
 			long_image
 		} = image;
 
+		const {
+			spring,
+			image_style,
+		} = this.props;
+
+		const lightbox_image = {
+			url
+		};
+
+		if (spring) {
+			return (
+				<div 
+					key={`image-${index}`}
+					className={classnames(styles['spring-image-container'])}
+					onClick={() => this.openLightBox(lightbox_image)}
+				>
+					<SpringImage
+						className={classnames(styles['spring-image'])}
+						image_url={small_url ? small_url : url}
+					/>
+				</div>
+			);
+		}
+
 		if (long_image) {
 			const long_image_styles = {
 				backgroundImage: `url(${url})`,
@@ -92,10 +119,7 @@ export default class Gallery extends Component {
 				backgroundPosition: 'center'
 			};
 
-			const lightbox_image = {
-				url,
-				long_image
-			}
+			lightbox_image.long_image = true;
 
 			return (
 				<div 
@@ -105,10 +129,6 @@ export default class Gallery extends Component {
 					onClick={() => this.openLightBox(lightbox_image)}
 				/>
 			);
-		}
-
-		const lightbox_image = {
-			url
 		}
 
 		return (

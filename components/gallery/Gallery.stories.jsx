@@ -4,11 +4,6 @@ import { withKnobs, object, select, text, boolean } from '@storybook/addon-knobs
 import centered from '@storybook/addon-centered/react';
 import Gallery from './Gallery';
 
-const black_bg = {
-	name: 'black',
-	value: '#000',
-};
-
 const images = [
 	{
 		"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-01.png",
@@ -39,15 +34,39 @@ const images = [
 storiesOf('component-library/Gallery', module)
 	.addDecorator(centered)
 	.addDecorator(withKnobs)
-	.add('default', () => (
-		<div style={{margin: '40px'}}>
-			<Gallery
-				style={object('style', {
-					width: '100%'
+	.add('default', () => {
+		return (
+			<div 
+				style={object('container_style', {
+					margin: '40px', 
+					width: '900px'
 				})}
-				images={images}
-			/>
-		</div>
-	), {
-		backgrounds: [black_bg]
+			>
+				<Gallery
+					style={object('style', {
+						width: '100%'
+					})}
+					images={images}
+				/>
+			</div>
+		);
+		
+	})
+	.add('spring images', () => {
+		return (
+			<div 
+				style={object('container_style', {
+					margin: '40px', 
+					width: '900px'
+				})}
+			>
+				<Gallery
+					style={object('style', {
+						width: '100%'
+					})}
+					images={images}
+					spring
+				/>
+			</div>
+		);
 	});
