@@ -8,7 +8,7 @@ import styles from './HeroBanner.scss';
 
 const HeroHeight = {
 	FULL: 'full',
-	THREE_QUATER: 'three-quater',
+	THREE_QUARTER: 'three-quarter',
 	HALF: 'half',
 	AUTO: 'auto'
 };
@@ -126,7 +126,7 @@ class HeroBanner extends PureComponent {
 			styles[text_position === 'top' && 'justify-top'],
 			styles[text_position === 'bottom' && 'justify-bottom'],
 			styles[hero_height === 'full' && 'full'],
-			styles[hero_height === 'three-quater' && 'three-quater'],
+			styles[hero_height === 'three-quarter' && 'three-quarter'],
 			styles[hero_height === 'half' && 'half'],
 			styles[hero_height === 'auto' && 'auto']
 		);
