@@ -1,0 +1,33 @@
+// Avenir
+@mixin avenir {
+	font-family: 'Avenir', helvetica, arial, sans-serif;	
+}
+
+@mixin avenir-light {
+	font-family: 'Avenir', helvetica, arial, sans-serif;
+	font-weight: lighter;	
+}
+
+@mixin avenir-bold {
+	font-family: 'Avenir', helvetica, arial, sans-serif;	
+	font-weight: bold;
+}
+
+//Futura
+@mixin futura {
+	font-family: 'Futura', helvetica, arial, sans-serif;	
+}
+
+@mixin futura-bold {
+	font-family: 'Futura', helvetica, arial, sans-serif;
+	font-weight: bold;
+}
+
+@mixin georgia {
+	font-family: 'Georgia', 'Times New Roman', sans-serif;	
+}
+
+@mixin georgia-bold {
+	font-family: 'Georgia', 'Times New Roman', sans-serif;
+	font-weight: bold;
+}

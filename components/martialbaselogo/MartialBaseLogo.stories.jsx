@@ -17,12 +17,6 @@ const black_bg = {
 	default: true,
 };
 
-const rangoon_green_bg = {
-	name: 'rangoon green',
-	value: '#1A1A1A',
-	default: true,
-};
-
 const logo_style = {
 	width: '350px',
 };
@@ -34,7 +28,7 @@ storiesOf('component-library/MartialBaseLogo', module)
 		<MartialBaseLogo
 			theme={MartialBaseLogo.Theme.WHITE}
 			title='Reuters'
-			icon={boolean('icon', false)}
+			show_text={boolean('text', false)}
 			style={logo_style}
 		/>
 	), {
@@ -44,7 +38,7 @@ storiesOf('component-library/MartialBaseLogo', module)
 		<MartialBaseLogo
 			theme={MartialBaseLogo.Theme.BLACK}
 			title='Reuters'
-			icon={boolean('icon', false)}
+			show_text={boolean('text', false)}
 			style={logo_style}
 		/>
 	), {

@@ -19,10 +19,21 @@ const example_text = 'This is the TextLabel text.';
 storiesOf('component-library/TextLabel', module)
 	.addDecorator(centered)
 	.addDecorator(withKnobs)
-	.add('render plain text', () => {
+	.add('default', () => {
 		return (
 			<TextLabel
 				text={text('text', example_text)}
+				font={select('font', TextLabel.Font)}
+				color={select('color', TextLabel.Color)}
+			/>
+		);
+	})
+	.add('custom CSS color', () => {
+		return (
+			<TextLabel
+				text={text('text', example_text)}
+				font={select('font', TextLabel.Font)}
+				text={example_text}
 			/>
 		);
 	})
@@ -69,30 +80,6 @@ storiesOf('component-library/TextLabel', module)
 			<TextLabel
 				href={text('href', 'https://www.reuters.com/')}
 				target={text('target', '_blank')}
-				text={example_text}
-			/>
-		);
-	})
-	.add('font options', () => {
-		return (
-			<TextLabel
-				font={select('font', TextLabel.Font)}
-				text={example_text}
-			/>
-		);
-	})
-	.add('color options', () => {
-		return (
-			<TextLabel
-				color={select('color', TextLabel.Color)}
-				text={example_text}
-			/>
-		);
-	})
-	.add('custom CSS color', () => {
-		return (
-			<TextLabel
-				color={color('color', '#FF1493')}
 				text={example_text}
 			/>
 		);
