@@ -1,5 +1,45 @@
 /*  imported from SpringImage.scss  */
 
+@font-face {
+  font-family: 'circulartt-black';
+  font-display: fallback;
+  src: url("/styles/fonts/circulartt-black.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'circulartt-black-italic';
+  font-display: fallback;
+  src: url("/styles/fonts/circulartt-black-italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'circulartt-bold';
+  font-display: fallback;
+  src: url("/styles/fonts/circulartt-bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'circulartt-bold-italic';
+  font-display: fallback;
+  src: url("/styles/fonts/circulartt-bold-italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'circulartt-book';
+  font-display: fallback;
+  src: url("/styles/fonts/circulartt-book.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'circulartt-book-italic';
+  font-display: fallback;
+  src: url("/styles/fonts/circulartt-book-italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'circulartt-medium';
+  font-display: fallback;
+  src: url("/styles/fonts/circulartt-medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'circulartt-medium-italic';
+  font-display: fallback;
+  src: url("/styles/fonts/circulartt-medium-italic.ttf") format("truetype"); }
+
 .SpringImage__container___174EQ {
   position: relative; }
 

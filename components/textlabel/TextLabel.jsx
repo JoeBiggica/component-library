@@ -25,7 +25,11 @@ const Font = {
 	FUTURA: 'futura',
 	FUTURA_BOLD: 'futura-bold',
 	GEORGIA: 'georgia',
-	GEORGIA_BOLD: 'georgia-bold'
+	GEORGIA_BOLD: 'georgia-bold',
+	CIRCULARTT_BOOK: 'circulartt-book',
+	CIRCULARTT_MEDIUM: 'circulartt-medium',
+	CIRCULARTT_BOLD: 'circulartt-bold',
+	CIRCULARTT_BLACK: 'circulartt-black',
 };
 
 const color_values = Object.values(Color);

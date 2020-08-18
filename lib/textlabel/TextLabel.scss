@@ -16,6 +16,7 @@
 	}
 }
 
+// Avenir
 .avenir {
 	@include avenir;
 }
@@ -28,6 +29,8 @@
 	@include avenir-bold;
 }
 
+
+// Futura
 .futura {
 	@include futura;
 }
@@ -36,6 +39,7 @@
 	@include futura-bold;
 }
 
+// Georgia
 .georgia {
 	@include georgia;
 }
@@ -44,6 +48,22 @@
 	@include georgia-bold;
 }
 
+// Circular TT
+.circulartt-book {
+	font-family: 'circulartt-book', sans-serif;
+}
+
+.circulartt-medium {
+	font-family: 'circulartt-medium', sans-serif;
+}
+
+.circulartt-bold {
+	font-family: 'circulartt-bold', sans-serif;
+}
+
+.circulartt-black {
+	font-family: 'circulartt-black', sans-serif;
+}
 
 .gray-to-black,
 .gray-to-orange,
