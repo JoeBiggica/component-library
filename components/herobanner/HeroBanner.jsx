@@ -17,30 +17,36 @@ const TextPosition = {
 	BOTTOM: 'bottom',
 	TOP: 'top',
 	CENTER: 'center'
-}
+};
 
 const TextGradient = {
 	BOTTOM: 'bottom',
 	TOP: 'top',
 	NONE: null	
-}
+};
 
 const ButtonDirection = {
 	ROW: 'row',
 	COLUMN: 'column'
-}
+};
 
 const BackgroundPosition = {
 	CENTER: 'center',
 	TOP: 'top',
 	BOTTOM: 'bottom'
-}
+};
 
 const BackgroundGradient = {
 	NONE: null,
 	BOTTOM: 'bottom',
 	TOP: 'top'
-}
+};
+
+const LogoPosition = {
+	LEFT: 'left',
+	RIGHT: 'right',
+	CENTER: 'center'
+};
 
 class HeroBanner extends PureComponent {
 
@@ -58,6 +64,8 @@ class HeroBanner extends PureComponent {
 		background_position: PropTypes.oneOf(Object.values(BackgroundPosition)),
 		hero_height: PropTypes.oneOf(Object.values(HeroHeight)),
 		background_gradient: PropTypes.oneOf(Object.values(BackgroundGradient)),
+		logo: PropTypes.bool,
+		logo_position: PropTypes.oneOf(Object.values(LogoPosition))
 	}
 
 	static defaultProps = {
