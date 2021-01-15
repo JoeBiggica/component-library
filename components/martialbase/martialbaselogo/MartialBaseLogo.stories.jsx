@@ -21,7 +21,7 @@ const logo_style = {
 	width: '350px',
 };
 
-storiesOf('component-library/MartialBaseLogo', module)
+storiesOf('component-library/martialbase/MartialBaseLogo', module)
 	.addDecorator(withKnobs)
 	.addDecorator(centered)
 	.add('White', () => (

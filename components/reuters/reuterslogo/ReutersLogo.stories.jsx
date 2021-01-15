@@ -27,7 +27,7 @@ const logo_style = {
 	width: '350px',
 };
 
-storiesOf('component-library/ReutersLogo', module)
+storiesOf('component-library/reuters/ReutersLogo', module)
 	.addDecorator(withKnobs)
 	.addDecorator(centered)
 	.add('Five rings with gray text (default)', () => (
