@@ -3,18 +3,13 @@
 @import 'styles/_eases.scss';
 
 .container {
-	padding: 0 20px;
     width: 100%;
     z-index: 2;
 
-	@include for-tablet-landscape-up {
-		padding: 0 60px;
-		top: 0;
-    	left: 0;
-	}
-
 	&.absolute {
 		position: absolute;
+		top: 0;
+    	left: 0;
 	}
 
 	&.fixed {
@@ -34,9 +29,7 @@
 
 .inner {
 	position: relative;
-	width: 100%;
-	height: 100%;
-	padding-top: 20px;
+	padding: 20px 40px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;	
@@ -56,6 +49,10 @@
 				margin-top: 0;
 			}
 		}
+	}
+
+	@include for-tablet-landscape-up {
+		padding: 20px 60px;
 	}
 	
 }
@@ -78,9 +75,17 @@
 		margin-top: 20px;
 	}
 
+	ul {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
 	li {
 		font-size: 16px;
-		display: inline-block;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
 
 		@include for-tablet-portrait-up {
 			font-size: 16px;
@@ -97,12 +102,24 @@
 		&:hover,
 		&.active {
 			a {
-				color: $red;
+				color: $mb-red;
 			}
 
-			.underline {
-				width: 100%;
+			.magnifier {
+				fill: $mb-red;
 			}
+		}
+
+		&.border {
+			border: 2px solid $mb-red;
+			border-radius: 30px;
+			padding: 8px 20px;
+		}
+
+		.magnifier {
+			width: 15px;
+			fill: white;
+			margin-right: 5px;
 		}
 
 		// .underline {

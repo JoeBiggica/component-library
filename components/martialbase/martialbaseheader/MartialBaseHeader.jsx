@@ -5,6 +5,7 @@ import classnames from 'classnames';
 import HamburgerButton from 'components/hamburgerbutton';
 import MartialBaseLogo  from 'components/martialbase/martialbaselogo';
 import TextLabel from 'components/textlabel';
+import Magnifier from 'components/icons/magnifier.svg';
 
 import styles from './MartialBaseHeader.scss';
 
@@ -54,7 +55,8 @@ class MartialBaseHeader extends PureComponent {
 		this.menu_items = [
 			{
 				name: 'Organizations',
-				id: 'organizations'
+				id: 'organizations',
+				search: true
 			},
 			{
 				name: 'Contact Us',
@@ -78,16 +80,21 @@ class MartialBaseHeader extends PureComponent {
 
 	renderMenuItem = item => {
 		const path = item.id === 'index' ? '/' : `/${item.id}`; 
-		const item_classname = classnames(styles[item.id === this.route && 'active']);
+		const item_classname = classnames(
+			styles[item.id === this.route && 'active'],
+			styles[item.border && 'border']
+		);
 		return (
-			<li key={`${item.id}`}>
+			<li key={`${item.id}`} className={item_classname} style={{color: item.color}}>
+				{item.search &&
+					<Magnifier className={styles['magnifier']} />
+				}
 				<TextLabel
-					font={TextLabel.Font.CIRCULARTT_BLACK}
+					font={TextLabel.Font.CIRCULARTT_BOLD}
 					text={item.name}
-					color={TextLabel.Color.WHITE}
+					color={item.id === 'signup' ? TextLabel.Color.MB_RED : TextLabel.Color.WHITE}
 					href={path}
 				/>
-				<div className={classnames(styles['underline'])} />
 			</li>
 		);
 	}

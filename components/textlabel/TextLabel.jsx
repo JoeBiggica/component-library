@@ -11,6 +11,7 @@ const Color = {
 	BLACK: 'black',
 	ORANGE: 'orange',
 	BLUE: 'blue',
+	MB_RED: 'mb-red',
 	GRAY_TO_BLACK: 'gray-to-black',
 	GRAY_TO_ORANGE: 'gray-to-orange',
 	WHITE_TO_ORANGE: 'white-to-orange',
