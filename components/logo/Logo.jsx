@@ -4,26 +4,23 @@ import classnames from 'classnames';
 
 import styles from './Logo.scss';
 
-const Shape = {
-	CIRCLE: 'CIRCLE',
-	SQUARE: 'SQUARE'
-};
-
-const shape_values = Object.values(Shape);
-
 function Logo(props) {
 	const {
 		className,
+		style,
 		url,
-		shape
+		background_color,
 	} = props
 
 	const container_classname = classnames(
 		styles['container'],
-		styles[shape === 'circle' && 'circle'],
-		styles[shape === 'square' && 'square'],
 		className
 	);
+
+	const container_styles = {
+		backgroundColor: background_color,
+		...style
+	}
 
 	const logo_classname = classnames(
 		styles['logo']
@@ -34,7 +31,7 @@ function Logo(props) {
 	};
 
 	return (
-		<div className={container_classname}>
+		<div className={container_classname} style={container_styles}>
 			<div className={logo_classname} style={logo_syles} />
 		</div>
 	)
@@ -42,14 +39,13 @@ function Logo(props) {
 
 Logo.propTypes = {
 	className: PropTypes.string,
+	style: PropTypes.object,
 	url: PropTypes.string,
-	shape: PropTypes.oneOf(shape_values)
+	background_color: PropTypes.string,
 };
 
 Logo.defaultProps = {
-	shape: Shape.SQUARE
+	background_color: '#FFFFFF'
 };
-
-Logo.Shape = Shape;
 
 export default Logo;
