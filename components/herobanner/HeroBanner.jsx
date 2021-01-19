@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 import TextLabel from 'components/textlabel';
+import Logo from 'components/logo';
 
 import styles from './HeroBanner.scss';
 
@@ -53,6 +54,7 @@ class HeroBanner extends PureComponent {
 	static propTypes = {
 		className: PropTypes.string,
 		title: PropTypes.string,
+		font: PropTypes.oneOf(Object.values(TextLabel.Font)),
 		title_border: PropTypes.bool,
 		text_position: PropTypes.oneOf(Object.values(TextPosition)),
 		text_gradient: PropTypes.oneOf(Object.values(TextGradient)),
@@ -64,17 +66,19 @@ class HeroBanner extends PureComponent {
 		background_position: PropTypes.oneOf(Object.values(BackgroundPosition)),
 		hero_height: PropTypes.oneOf(Object.values(HeroHeight)),
 		background_gradient: PropTypes.oneOf(Object.values(BackgroundGradient)),
-		logo: PropTypes.bool,
+		logo: PropTypes.string,
 		logo_position: PropTypes.oneOf(Object.values(LogoPosition))
 	}
 
 	static defaultProps = {
 		background_position: BackgroundPosition.CENTER,
+		font: TextLabel.AVENIR_BOLD,
 		text_position: TextPosition.BOTTOM,
 		text_gradient: TextGradient.BOTTOM,
 		button_direction: ButtonDirection.ROW,
 		hero_height: HeroHeight.FULL,
-		background_gradient: BackgroundGradient.NONE
+		background_gradient: BackgroundGradient.NONE,
+		logo_position: LogoPosition.LEFT
 	}
 
 	static HeroHeight = HeroHeight
@@ -116,6 +120,7 @@ class HeroBanner extends PureComponent {
 		const {
 			className,
 			title,
+			font,
 			title_border,
 			text_gradient,
 			text_position,
@@ -125,7 +130,9 @@ class HeroBanner extends PureComponent {
 			background_image,
 			background_position,
 			background_gradient,
-			hero_height
+			hero_height,
+			logo,
+			logo_position
 		} = this.props;
 
 		const container_classname = classnames(
@@ -144,10 +151,11 @@ class HeroBanner extends PureComponent {
 			backgroundPosition: background_position && background_position,
 		};
 
-		const text_container_classname = classnames(
-			styles['text-container'],
+		const title_container_classname = classnames(
+			styles['title-container'],
 			styles[title_border && 'border'],
 			styles[text_gradient && `gradient-${text_gradient}`],
+			styles[logo_position === 'left' && 'logo-left']
 		);
 
 		const background_gradient_classname = classnames(
@@ -156,16 +164,28 @@ class HeroBanner extends PureComponent {
 			styles[background_gradient === 'bottom' && 'bottom']
 		);
 
+		const logo_classname = classnames(
+			styles['logo'],
+			styles[logo_position === 'left' && 'left'],
+			styles[logo_position === 'right' && 'right'],
+		);
+
 		return (
 			<div className={container_classname}  style={background_style}>
 				{ title &&
-					<div className={text_container_classname}>
+					<div className={title_container_classname}>
+						{ logo &&
+							<Logo
+								className={logo_classname}
+								url={logo}
+							/>
+						}
 						<TextLabel
 							className={classnames(styles['title'])}
 							tag='h1'
 							text={title}
 							color={TextLabel.Color.WHITE}
-							font={TextLabel.Font.AVENIR_BOLD}
+							font={font}
 						/>
 					</div>
 				}
