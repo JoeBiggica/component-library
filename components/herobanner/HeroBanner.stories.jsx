@@ -20,11 +20,12 @@ storiesOf('component-library/HeroBanner', module)
 				font={select('font', TextLabel.Font)}
 				text_position={select('text_position', HeroBanner.TextPosition)}
 				text_gradient={select('text_gradient', HeroBanner.TextGradient)}
-				background_image={text('background_image', 'https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/images/lion-dance/three-lions.jpg')}
+				background_image={text('background_image', 'https://www.itl.cat/pngfile/big/108-1080861_hokuto-no-ken-3440x1440-fist-of-the-north.jpg')}
 				background_position={select('background_position', HeroBanner.BackgroundPosition)}
 				background_gradient={select('background_gradient', HeroBanner.BackgroundGradient)}
 				hero_height={select('hero_height', HeroBanner.HeroHeight)}	
 				logo={text('logo_url', 'https://fongshungga.com/static/fongs-circle-logo.png')}
+				logo_position={select('logo_position', HeroBanner.LogoPosition)}
 			/>
 		</div>
 	), {
