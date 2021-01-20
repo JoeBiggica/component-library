@@ -26,6 +26,12 @@ const TextGradient = {
 	NONE: null	
 };
 
+const TextJustify = {
+	LEFT: 'left',
+	RIGHT: 'right',
+	CENTER: 'center'	
+};
+
 const ButtonDirection = {
 	ROW: 'row',
 	COLUMN: 'column'
@@ -46,12 +52,12 @@ const BackgroundGradient = {
 const LogoPosition = {
 	LEFT: 'left',
 	RIGHT: 'right',
-	CENTER: 'center'
+	TOP: 'top'
 };
 
 const TitleLogoAlignment = {
-	TOP: 'top',
 	BOTTOM: 'bottom',
+	TOP: 'top',
 	CENTER: 'center'
 };
 
@@ -64,6 +70,7 @@ class HeroBanner extends PureComponent {
 		title_border: PropTypes.bool,
 		text_position: PropTypes.oneOf(Object.values(TextPosition)),
 		text_gradient: PropTypes.oneOf(Object.values(TextGradient)),
+		text_justify: PropTypes.oneOf(Object.values(TextJustify)),
 		buttons: PropTypes.array,
 		button_border: PropTypes.bool,
 		button_direction: PropTypes.string,
@@ -82,6 +89,7 @@ class HeroBanner extends PureComponent {
 		font: TextLabel.AVENIR_BOLD,
 		text_position: TextPosition.BOTTOM,
 		text_gradient: TextGradient.BOTTOM,
+		text_justify: TextJustify.LEFT,
 		button_direction: ButtonDirection.ROW,
 		hero_height: HeroHeight.FULL,
 		background_gradient: BackgroundGradient.NONE,
@@ -92,6 +100,7 @@ class HeroBanner extends PureComponent {
 	static HeroHeight = HeroHeight
 	static TextPosition = TextPosition
 	static TextGradient = TextGradient
+	static TextJustify = TextJustify
 	static ButtonDirection = ButtonDirection
 	static BackgroundPosition = BackgroundPosition
 	static BackgroundGradient = BackgroundGradient
@@ -134,6 +143,7 @@ class HeroBanner extends PureComponent {
 			title_border,
 			text_gradient,
 			text_position,
+			text_justify,
 			buttons,
 			button_border,
 			image,
@@ -172,11 +182,11 @@ class HeroBanner extends PureComponent {
 
 		const title_container_inner_classname = classnames(
 			styles['title-container-inner'],
-			styles[logo_position === 'left' && 'logo-left'],
-			styles[logo_position === 'right' && 'logo-right'],
+			styles[text_justify === 'left' && 'left'],
+			styles[text_justify === 'right' && 'right'],
+			styles[logo_position === 'top' && 'logo-top'],
 			styles[title_logo_alignment === 'top' && 'align-top'],
-			styles[title_logo_alignment === 'bottom' && 'align-bottom'],
-			styles[title_logo_alignment === 'center' && 'align-center']
+			styles[title_logo_alignment === 'bottom' && 'align-bottom']
 		);
 
 		const background_gradient_classname = classnames(
@@ -201,7 +211,7 @@ class HeroBanner extends PureComponent {
 				{ title &&
 					<div className={title_container_classname}>
 						<div className={title_container_inner_classname}>
-							{ logo &&
+							{ logo && logo_position !== 'right' &&
 								<Logo
 									className={logo_classname}
 									url={logo}
@@ -214,6 +224,12 @@ class HeroBanner extends PureComponent {
 								color={TextLabel.Color.WHITE}
 								font={font}
 							/>
+							{ logo && logo_position === 'right' &&
+								<Logo
+									className={logo_classname}
+									url={logo}
+								/>
+							}
 						</div>
 					</div>
 				}
