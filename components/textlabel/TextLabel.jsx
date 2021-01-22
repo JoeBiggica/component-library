@@ -78,9 +78,8 @@ function TextLabel(props) {
 			className={composed_className}
 			style={composed_style}
 			onClick={handleClick}
-		>
-			{text}
-		</Tag>
+			dangerouslySetInnerHTML={{__html: text}}
+		/>
 	);
 }
 
