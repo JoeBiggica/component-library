@@ -9,11 +9,19 @@
 }
 
 .title {
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 .body {
 	padding-bottom: 15px;
+
+	.paragraph {
+		color: $darkgrey;
+
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
 }
 
 .table {
@@ -21,5 +29,9 @@
 
 	.name {
 		padding-right: 20px;
+	}
+
+	.value {
+		color: $darkgrey;
 	}
 }

@@ -18,11 +18,11 @@ const black_bg = {
 const body_items = [
 	{
 		type: 'paragraph',
-		content: 'This is the text card body'
+		content: 'This is the text card body This is the text card body This is the text card body This is the text card body This is the text card body This is the text card body This is the text card body.'
 	},
 	{
 		type: 'paragraph',
-		content: 'Another paragraph here.'
+		content: 'Another paragraph here. Another paragraph here. Another paragraph here. Another paragraph here. Another paragraph here. Another paragraph here. Another paragraph here.'
 	}
 ];
 
@@ -49,7 +49,7 @@ storiesOf('component-library/TextCard', module)
 	.addDecorator(centered)
 	.addDecorator(withKnobs)
 	.add('default', () => (
-		<div>
+		<div style={object('style', {maxWidth: '500px'})}>
 			<TextCard 
 				title={text('title', 'Hero Banner Title')}
 				body_items={object('body_items', body_items)}

@@ -73,7 +73,7 @@ function TextCard(props) {
 					{body_items.map(renderBodyItem)}
 				</div>
 			}
-			{rows &&
+			{rows && rows.length > 0 &&
 				<table className={classnames(styles['table'])}>
 					{rows.map(renderRow)}
 				</table>
