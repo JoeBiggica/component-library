@@ -28,7 +28,7 @@ function ArrowLink(props) {
 			className={classnames(styles['container'], className)}
 			text={text_content}
 			font={TextLabel.Font.MEDIUM}
-			color={TextLabel.Color.GRAY_TO_BLACK}
+			color={TextLabel.Color.GREY_TO_BLACK}
 		/>
 	);
 }

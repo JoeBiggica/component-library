@@ -65,30 +65,30 @@
 	font-family: 'circulartt-black', sans-serif;
 }
 
-.gray-to-black,
-.gray-to-orange,
+.grey-to-black,
+.grey-to-orange,
 .black-to-orange,
 .white-to-orange {
 	transition: color .25s $easeOutExpo;
 }
 
 .orange,
-.gray-to-orange:hover,
+.grey-to-orange:hover,
 .black-to-orange:hover,
 .white-to-orange:hover,
 .blue-to-orange:hover {
 	color: $orange;
 }
 
-.gray,
-.gray-to-black,
-.gray-to-orange {
-	color: $small-text-gray;
+.grey,
+.grey-to-black,
+.grey-to-orange {
+	color: $small-text-grey;
 }
 
 .black,
 .black-to-orange,
-.gray-to-black:hover {
+.grey-to-black:hover {
 	color: $blackest;
 }
 

@@ -19,7 +19,7 @@ storiesOf('component-library/Duration', module)
 			<Duration
 				seconds={number('seconds', 60)}
 				font={select('font', Duration.Font, Duration.Font.SMALL_ALL_CAPS)}
-				color={select('color', Duration.Color, Duration.Color.GRAY)}
+				color={select('color', Duration.Color, Duration.Color.GREY)}
 			/>
 		);
 	});

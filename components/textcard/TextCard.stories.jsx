@@ -51,7 +51,7 @@ storiesOf('component-library/TextCard', module)
 	.add('default', () => (
 		<div style={object('style', {maxWidth: '500px'})}>
 			<TextCard 
-				title={text('title', 'Hero Banner Title')}
+				title={text('title', 'Text Title')}
 				body_items={object('body_items', body_items)}
 				rows={object('rows', rows)}
 				font={select('font', TextLabel.Font)}

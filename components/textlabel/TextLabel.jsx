@@ -6,14 +6,14 @@ import omit from 'lodash/omit';
 import styles from './TextLabel.scss';
 
 const Color = {
-	GRAY: 'gray',
+	GREY: 'grey',
 	WHITE: 'white',
 	BLACK: 'black',
 	ORANGE: 'orange',
 	BLUE: 'blue',
 	MB_RED: 'mb-red',
-	GRAY_TO_BLACK: 'gray-to-black',
-	GRAY_TO_ORANGE: 'gray-to-orange',
+	GREY_TO_BLACK: 'grey-to-black',
+	GREY_TO_ORANGE: 'grey-to-orange',
 	WHITE_TO_ORANGE: 'white-to-orange',
 	BLACK_TO_ORANGE: 'black-to-orange',
 	BLUE_TO_ORANGE: 'blue-to-orange'

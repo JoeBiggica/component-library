@@ -54,7 +54,7 @@ Link.propTypes = {
 };
 
 Link.defaultProps = {
-	color: Color.GRAY_TO_ORIGINAL,
+	color: Color.GREY_TO_ORIGINAL,
 	borderless: false,
 	translations: {copyLink: 'Copy link'}
 };

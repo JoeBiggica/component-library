@@ -79,11 +79,11 @@ storiesOf('component-library/SocialTools', module)
 
 storiesOf('component-library/SocialTools/colors', module)
 	.addDecorator(centered)
-	.add('gray to platform theme (default)', () => (
+	.add('grey to platform theme (default)', () => (
 		<SocialTools
 			platforms={all_platforms}
 			share={share}
-			color={SocialTools.Color.GRAY_TO_ORIGINAL}
+			color={SocialTools.Color.GREY_TO_ORIGINAL}
 		/>
 	))
 	.add('white to platform theme', () => (
@@ -95,11 +95,11 @@ storiesOf('component-library/SocialTools/colors', module)
 	), {
 		backgrounds: [rangoon_green_bg]
 	})
-	.add('always gray', () => (
+	.add('always grey', () => (
 		<SocialTools
 			platforms={all_platforms}
 			share={share}
-			color={SocialTools.Color.ALWAYS_GRAY}
+			color={SocialTools.Color.ALWAYS_GREY}
 		/>
 	))
 	.add('always white', () => (

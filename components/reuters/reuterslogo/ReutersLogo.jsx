@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 // Based off Online Usage: https://agency.reuters.com/en/platforms-delivery/reuters-brand-attribution-guidelines/online-usage.html
 const Theme = {
-	GRAY_TEXT: {
+	grey_TEXT: {
 		logo_color: '#FB8033',
 		text_color: '#666666',
 	},
@@ -56,7 +56,7 @@ ReutersLogo.propTypes = {
 };
 
 ReutersLogo.defaultProps = {
-	theme: Theme.GRAY_TEXT,
+	theme: Theme.GREY_TEXT,
 	icon: false
 };
 

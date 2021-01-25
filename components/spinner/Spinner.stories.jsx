@@ -12,12 +12,12 @@ const black_bg = {
 const spinner_only_style = {
 	width: '30px',
 	height: '30px',
-	outline: '1px solid lightgray',
+	outline: '1px solid lightgrey',
 };
 
 const spinner_and_text_style = {
 	width: '30px',
-	outline: '1px solid lightgray',
+	outline: '1px solid lightgrey',
 };
 
 storiesOf('component-library/Spinner', module)

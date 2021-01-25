@@ -7,7 +7,7 @@ import NavButton from './NavButton';
 
 
 const backgrounds = [{
-	name: 'light gray',
+	name: 'light grey',
 	value: '#F0F0F0',
 	default: true,
 }, {

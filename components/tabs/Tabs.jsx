@@ -77,7 +77,7 @@ class Tabs extends PureComponent {
 	}
 
 	renderItem = (item, i, current) => {
-		const color = current ? TextLabel.Color[this.props.current_color] : TextLabel.Color.GRAY;
+		const color = current ? TextLabel.Color[this.props.current_color] : TextLabel.Color.GREY;
 		const ariaLabel = `tab-${i}`;
 
 		return (

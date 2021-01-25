@@ -30,7 +30,7 @@ const logo_style = {
 storiesOf('component-library/reuters/ReutersLogo', module)
 	.addDecorator(withKnobs)
 	.addDecorator(centered)
-	.add('Five rings with gray text (default)', () => (
+	.add('Five rings with grey text (default)', () => (
 		<ReutersLogo
 			title='Reuters'
 			icon={boolean('icon', false)}

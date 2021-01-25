@@ -5,7 +5,7 @@ import classnames from 'classnames';
 import styles from './TextInput.scss';
 
 const Color = {
-	GRAY: 'gray',
+	GREY: 'grey',
 	WHITE: 'white',
 	BLACK: 'black',
 	ORANGE: 'orange',
@@ -26,7 +26,7 @@ export default class TextInput extends PureComponent {
 	}
 
 	static defaultProps = {
-		color: Color.GRAY,
+		color: Color.GREY,
 		auto_focus: false,
 		spell_check: false,
 		auto_correct: false,

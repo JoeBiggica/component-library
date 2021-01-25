@@ -40,7 +40,7 @@ class RangeLine extends PureComponent {
 				className={styles['label']}
 				text={label}
 				font={TextLabel.Font.REGULAR}
-				color={TextLabel.Color.GRAY}
+				color={TextLabel.Color.GREY}
 				tag='div'
 				key={label}
 			/>

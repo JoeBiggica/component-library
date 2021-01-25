@@ -123,7 +123,7 @@ export default class Spinner extends PureComponent {
 							style={text_style}
 							text={text}
 							font={TextLabel.Font.REGULAR}
-							color={color === Color.WHITE ? TextLabel.Color.WHITE : TextLabel.Color.GRAY}
+							color={color === Color.WHITE ? TextLabel.Color.WHITE : TextLabel.Color.GREY}
 							tag='span'
 						/>
 					}
