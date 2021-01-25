@@ -14,15 +14,16 @@ function TextCard(props) {
 		font
 	} = props;
 
-	function renderBodyItem(item) {
+	function renderBodyItem(item, index) {
 		switch(item.type) {
 			case 'paragraph': 
 				return (
 					<TextLabel
 						className={classnames(styles['paragraph'])}
+						key={`p-${index}`}
 						tag='p'
 						text={item.content}
-						color={TextLabel.Color.BLACK}
+						color={TextLabel.Color.GREY}
 						font={font}
 					/>
 				);
@@ -31,9 +32,9 @@ function TextCard(props) {
 		}
 	}
 
-	function renderRow(row) {
+	function renderRow(row, index) {
 		return (
-			<tr className={classnames(styles['row'])}>
+			<tr className={classnames(styles['row'])} key={`row-${index}`}>
 				<TextLabel
 					className={classnames(styles['name'])}
 					tag='td'
@@ -45,7 +46,7 @@ function TextCard(props) {
 					className={classnames(styles['value'])}
 					tag='td'
 					text={row.value}
-					color={TextLabel.Color.BLACK}
+					color={TextLabel.Color.GREY}
 					font={font}
 				/>
 			</tr>
@@ -75,7 +76,9 @@ function TextCard(props) {
 			}
 			{rows && rows.length > 0 &&
 				<table className={classnames(styles['table'])}>
-					{rows.map(renderRow)}
+					<tbody>
+						{rows.map(renderRow)}
+					</tbody>
 				</table>
 			}
 		</div>

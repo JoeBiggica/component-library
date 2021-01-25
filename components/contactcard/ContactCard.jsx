@@ -5,9 +5,6 @@ import TextLabel from 'components/textlabel';
 
 import styles from './ContactCard.scss';
 
- // <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0FDdhCwYz5HXDhf5Pe0p0i3juGwy58ts&callback=initMap"
- //  type="text/javascript"></script>
-
 function ContactCard(props) {
 	const {
 		className,
@@ -16,6 +13,7 @@ function ContactCard(props) {
 		city,
 		state,
 		zipcode,
+		phone,
 		email,
 		font
 	} = props;
@@ -38,9 +36,9 @@ function ContactCard(props) {
 				/>
 			}
 
-			{street || city || state && 
+			{(street || city || state) && 
 
-				<div className={classnames(styles['address-container'])}>
+				<div className={classnames(styles['info-container'])}>
 					<TextLabel
 						className={classnames(styles['header'])}
 						tag='h4'
@@ -52,8 +50,17 @@ function ContactCard(props) {
 					{street &&
 						<TextLabel
 							className={classnames(styles['text'])}
-							tag='h3'
-							text={street}
+							tag='p'
+							text={`${street},`}
+							color={TextLabel.Color.GREY}
+							font={font}
+						/>
+					}
+					{city && state &&
+						<TextLabel
+							className={classnames(styles['text'])}
+							tag='p'
+							text={`${city}, ${state} ${zipcode}`}
 							color={TextLabel.Color.GREY}
 							font={font}
 						/>
@@ -63,14 +70,42 @@ function ContactCard(props) {
 
 			
 
-			{title &&
-				<TextLabel
-					className={classnames(styles['title'])}
-					tag='h3'
-					text={title}
-					color={TextLabel.Color.BLACK}
-					font={font}
-				/>
+			{phone &&
+				<div className={classnames(styles['info-container'])}>
+					<TextLabel
+						className={classnames(styles['header'])}
+						tag='h4'
+						text='Phone'
+						color={TextLabel.Color.BLACK}
+						font={font}
+					/>
+					<TextLabel
+						className={classnames(styles['text'])}
+						tag='p'
+						text={phone}
+						color={TextLabel.Color.GREY}
+						font={font}
+					/>
+				</div>
+			}
+
+			{email &&
+				<div className={classnames(styles['info-container'])}>
+					<TextLabel
+						className={classnames(styles['header'])}
+						tag='h4'
+						text='Email'
+						color={TextLabel.Color.BLACK}
+						font={font}
+					/>
+					<TextLabel
+						className={classnames(styles['text'])}
+						tag='p'
+						text={email}
+						color={TextLabel.Color.GREY}
+						font={font}
+					/>
+				</div>
 			}
 		</div>
 	);
@@ -83,6 +118,7 @@ ContactCard.propTypes = {
 	city: PropTypes.string,
 	state: PropTypes.string,
 	zipcode: PropTypes.string,
+	phone: PropTypes.string,
 	email: PropTypes.string,
 	font: PropTypes.oneOf(Object.values(TextLabel.Font))
 }

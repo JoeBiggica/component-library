@@ -16,7 +16,6 @@
 	padding-bottom: 15px;
 
 	.paragraph {
-		color: $darkgrey;
 
 		&:not(:last-child) {
 			margin-bottom: 15px;
@@ -32,6 +31,6 @@
 	}
 
 	.value {
-		color: $darkgrey;
+
 	}
 }
