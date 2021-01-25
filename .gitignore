@@ -6,4 +6,4 @@ package-lock.json
 build-storybook
 
 .vercel
-.storybook/head.html
+.storybook/preview-head.html
