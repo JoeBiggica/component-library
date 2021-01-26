@@ -15,7 +15,7 @@ function GoogleMap(props) {
 
 	useEffect(() => {
 		const map_el = mapRef.current;
-		if (typeof (google) && google.maps) {
+		if (typeof google !== 'undefined' && google.maps) {
 			const map = new google.maps.Map(map_el, {
 				center: { lat: -34.397, lng: 150.644 },
 				zoom: 13
