@@ -19,8 +19,8 @@ storiesOf('component-library/ContactCard', module)
 	.addDecorator(centered)
 	.addDecorator(withKnobs)
 	.add('default', () => (
-		<div style={object('style', {maxWidth: '500px'})}>
-			<ContactCard 
+		<div style={object('style', { maxWidth: '500px' })}>
+			<ContactCard
 				title={text('title', 'Contact Title')}
 				street={text('street', '95 Lincoln Ave')}
 				city={text('city', 'Staten Island')}
@@ -28,6 +28,8 @@ storiesOf('component-library/ContactCard', module)
 				zipcode={text('zipcode', '10306')}
 				phone={text('phone', '7181234567')}
 				email={text('email', 'bill.fong@fongshungga.com')}
+				font={select('font', TextLabel.Font)}
+				show_map={boolean('show_map', false)}
 			/>
 		</div>
 	), {

@@ -13,10 +13,10 @@ const MapStyle = {
 function GoogleMap(props) {
 	const {
 		className,
-		width,
 		height,
 		address,
-		map_style
+		map_style,
+		controls
 	} = props;
 
 	const mapRef = useRef(null);
@@ -25,7 +25,13 @@ function GoogleMap(props) {
 		const map = new google.maps.Map(container, {
 			zoom: 15,
 			center: { lat: -34.397, lng: 150.644 },
-			mapId: map_style
+			mapId: map_style,
+			zoomControl: controls.zoom,
+			mapTypeControl: controls.map_type,
+			scaleControl: controls.scale,
+			streetViewControl: controls.street_view,
+			rotateControl: controls.rotate,
+			fullscreenControl: controls.fullscreen
 		});
 
 		const geocoder = new google.maps.Geocoder();
@@ -63,8 +69,8 @@ function GoogleMap(props) {
 	);
 
 	const container_style = {
-		width: `${width}px`,
-		height: `${height}px`
+		width: '100%',
+		height: `${height}`
 	}
 
 	return (
@@ -81,14 +87,22 @@ GoogleMap.propTypes = {
 	width: PropTypes.string,
 	height: PropTypes.string,
 	address: PropTypes.string,
-	map_style: PropTypes.oneOf(Object.values(MapStyle))
+	map_style: PropTypes.oneOf(Object.values(MapStyle)),
+	controls: PropTypes.object
 };
 
 GoogleMap.defaultProps = {
-	width: '400',
-	height: '400',
+	height: '400px',
 	address: '3 Times Square, New York NY',
-	map_style: MapStyle.DEFAULT
+	map_style: MapStyle.DEFAULT,
+	controls: {
+		zoom: false,
+		map_type: false,
+		scale: false,
+		street_view: false,
+		rotate: false,
+		fullscreen: false
+	}
 }
 
 export default GoogleMap;

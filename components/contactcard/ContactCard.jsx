@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import TextLabel from 'components/textlabel';
+import GoogleMap from 'components/googlemap';
 
 import styles from './ContactCard.scss';
 
@@ -15,6 +16,7 @@ function ContactCard(props) {
 		zipcode,
 		phone,
 		email,
+		show_map,
 		font
 	} = props;
 
@@ -36,7 +38,16 @@ function ContactCard(props) {
 				/>
 			}
 
-			{(street || city || state) && 
+			{show_map &&
+				<GoogleMap
+					className={classnames(styles['map'])}
+					height='200px'
+					address={`${street}, ${city} ${state}, ${zipcode}`}
+					map_style={GoogleMap.MapStyle.GREY}
+				/>
+			}
+
+			{(street || city || state) &&
 
 				<div className={classnames(styles['info-container'])}>
 					<TextLabel
@@ -68,7 +79,7 @@ function ContactCard(props) {
 				</div>
 			}
 
-			
+
 
 			{phone &&
 				<div className={classnames(styles['info-container'])}>
@@ -120,6 +131,7 @@ ContactCard.propTypes = {
 	zipcode: PropTypes.string,
 	phone: PropTypes.string,
 	email: PropTypes.string,
+	show_map: PropTypes.bool,
 	font: PropTypes.oneOf(Object.values(TextLabel.Font))
 }
 

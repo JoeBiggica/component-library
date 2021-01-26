@@ -2,3 +2,10 @@
 @import 'styles/_colors.scss';
 @import 'styles/_eases.scss';
 
+.container {
+    width: 100%;
+
+    > div {
+        width: 100%;
+    }
+}
