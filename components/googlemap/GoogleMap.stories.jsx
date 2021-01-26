@@ -19,9 +19,11 @@ storiesOf('component-library/GoogleMap', module)
 	.addDecorator(withKnobs)
 	.add('default', () => (
 		<div>
-			<GoogleMap 
-				width={text('width', '500')}
-				height={text('height', '500')}
+			<GoogleMap
+				width={text('width', '400')}
+				height={text('height', '400')}
+				address={text('address', '3 Times Square, New York NY')}
+				map_style={select('map_style', GoogleMap.MapStyle)}
 			/>
 		</div>
 	), {
