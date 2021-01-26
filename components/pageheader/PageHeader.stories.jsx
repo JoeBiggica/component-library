@@ -14,15 +14,15 @@ storiesOf('component-library/PageHeader', module)
 	.addDecorator(withKnobs)
 	.add('default', () => {
 		return (
-			<div style={{width: '500px', margin: '0 auto'}}>
-				<PageHeader 
+			<div style={{ width: '500px', margin: '0 auto' }}>
+				<PageHeader
 					title={text('title', 'Page Header Title')}
-					font_color={color('font_color', 'white')}
-					background={boolean('background', true)}
+					font_color={color('font_color', 'black')}
+					background={boolean('background', false)}
 					background_color={color('background_color', 'blue')}
 					background_skew={boolean('background_skew', false)}
 					underline={boolean('underline', false)}
-					underline_color={color('underline_color', 'blue')}
+					underline_color={color('underline_color', 'red')}
 				/>
 			</div>
 		);

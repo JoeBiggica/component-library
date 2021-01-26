@@ -15,10 +15,12 @@ function GoogleMap(props) {
 
 	useEffect(() => {
 		const map_el = mapRef.current;
-		const map = new google.maps.Map(map_el, {
-		  center: {lat: -34.397, lng: 150.644},
-		  zoom: 13
-		});
+		if (typeof (google) && google.maps) {
+			const map = new google.maps.Map(map_el, {
+				center: { lat: -34.397, lng: 150.644 },
+				zoom: 13
+			});
+		}
 	});
 
 	const container_classname = classnames(

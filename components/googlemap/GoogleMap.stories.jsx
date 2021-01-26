@@ -18,9 +18,10 @@ storiesOf('component-library/GoogleMap', module)
 	.addDecorator(centered)
 	.addDecorator(withKnobs)
 	.add('default', () => (
-		<div style={object('style', {maxWidth: '500px'})}>
+		<div>
 			<GoogleMap 
-				title={text('title', 'Contact Title')}
+				width={text('width', '500')}
+				height={text('height', '500')}
 			/>
 		</div>
 	), {
