@@ -17,21 +17,21 @@ const black_bg = {
 
 const icons = [
     {
-        url: '',
+        url: 'https://i.imgur.com/mcheorE.png?1',
         label: 'Grappling'
     },
     {
-        url: '',
+        url: 'https://i.imgur.com/mcheorE.png?1',
         label: 'Lion Dance'
     },
     {
-        url: '',
+        url: 'https://i.imgur.com/mcheorE.png?1',
         label: 'Hand Techniques'
     },
     {
-        url: '',
+        url: 'https://i.imgur.com/mcheorE.png?1',
         label: 'Weapons'
-    },
+    }
 ]
 
 storiesOf('component-library/IconGroup', module)
