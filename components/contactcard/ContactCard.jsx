@@ -30,7 +30,7 @@ function ContactCard(props) {
 		<div className={container_classname}>
 			{title &&
 				<TextLabel
-					className={classnames(styles['title'])}
+					className={styles['title']}
 					tag='h3'
 					text={title}
 					color={TextLabel.Color.BLACK}
@@ -40,7 +40,7 @@ function ContactCard(props) {
 
 			{show_map &&
 				<GoogleMap
-					className={classnames(styles['map'])}
+					className={styles['map']}
 					height='200px'
 					address={`${street}, ${city} ${state}, ${zipcode}`}
 					map_style={GoogleMap.MapStyle.GREY}
@@ -49,9 +49,9 @@ function ContactCard(props) {
 
 			{(street || city || state) &&
 
-				<div className={classnames(styles['info-container'])}>
+				<div className={styles['info-container']}>
 					<TextLabel
-						className={classnames(styles['header'])}
+						className={styles['header']}
 						tag='h4'
 						text='Address'
 						color={TextLabel.Color.BLACK}
@@ -60,7 +60,7 @@ function ContactCard(props) {
 
 					{street &&
 						<TextLabel
-							className={classnames(styles['text'])}
+							className={styles['text']}
 							tag='p'
 							text={`${street},`}
 							color={TextLabel.Color.GREY}
@@ -69,7 +69,7 @@ function ContactCard(props) {
 					}
 					{city && state &&
 						<TextLabel
-							className={classnames(styles['text'])}
+							className={styles['text']}
 							tag='p'
 							text={`${city}, ${state} ${zipcode}`}
 							color={TextLabel.Color.GREY}
@@ -82,16 +82,16 @@ function ContactCard(props) {
 
 
 			{phone &&
-				<div className={classnames(styles['info-container'])}>
+				<div className={styles['info-container']}>
 					<TextLabel
-						className={classnames(styles['header'])}
+						className={styles['header']}
 						tag='h4'
 						text='Phone'
 						color={TextLabel.Color.BLACK}
 						font={font}
 					/>
 					<TextLabel
-						className={classnames(styles['text'])}
+						className={styles['text']}
 						tag='p'
 						text={phone}
 						color={TextLabel.Color.GREY}
@@ -101,16 +101,16 @@ function ContactCard(props) {
 			}
 
 			{email &&
-				<div className={classnames(styles['info-container'])}>
+				<div className={styles['info-container']}>
 					<TextLabel
-						className={classnames(styles['header'])}
+						className={styles['header']}
 						tag='h4'
 						text='Email'
 						color={TextLabel.Color.BLACK}
 						font={font}
 					/>
 					<TextLabel
-						className={classnames(styles['text'])}
+						className={styles['text']}
 						tag='p'
 						text={email}
 						color={TextLabel.Color.GREY}

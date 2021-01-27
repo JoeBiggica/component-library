@@ -23,13 +23,13 @@ const TextPosition = {
 const TextGradient = {
 	BOTTOM: 'bottom',
 	TOP: 'top',
-	NONE: null	
+	NONE: null
 };
 
 const TextJustify = {
 	LEFT: 'left',
 	RIGHT: 'right',
-	CENTER: 'center'	
+	CENTER: 'center'
 };
 
 const ButtonDirection = {
@@ -120,17 +120,17 @@ class HeroBanner extends PureComponent {
 			styles[this.props.button_border && 'border']
 		);
 
-		return (	
+		return (
 			<li className={button_container_classname}>
-				{button.label && 
-					<span className={classnames(styles['label'])}>{button.label}</span>
+				{button.label &&
+					<span className={styles['label']}>{button.label}</span>
 				}
 				<div className={button_classname}>
 					<a href={button.url} target={button.target} onClick={button.onClick}>
 						{button.text}
 					</a>
 				</div>
-			</li>	
+			</li>
 		);
 	}
 
@@ -207,11 +207,11 @@ class HeroBanner extends PureComponent {
 		);
 
 		return (
-			<div className={container_classname}  style={background_style}>
+			<div className={container_classname} style={background_style}>
 				{ title &&
 					<div className={title_container_classname}>
 						<div className={title_container_inner_classname}>
-							{ logo && logo_position !== 'right' &&
+							{logo && logo_position !== 'right' &&
 								<Logo
 									className={logo_classname}
 									url={logo}
@@ -224,7 +224,7 @@ class HeroBanner extends PureComponent {
 								color={TextLabel.Color.WHITE}
 								font={font}
 							/>
-							{ logo && logo_position === 'right' &&
+							{logo && logo_position === 'right' &&
 								<Logo
 									className={logo_classname}
 									url={logo}
@@ -234,18 +234,18 @@ class HeroBanner extends PureComponent {
 					</div>
 				}
 				{ buttons &&
-					<ul className={classnames(styles['buttons-container'])}>
+					<ul className={styles['buttons-container']}>
 						{buttons.map(this.renderButton)}
 					</ul>
 				}
 				{ image &&
-					<div className={classnames(styles['image-container'])} onClick={image.onClick}>
-						<img className={classnames(styles['image'])} src={image.src} />
+					<div className={styles['image-container']} onClick={image.onClick}>
+						<img className={styles['image']} src={image.src} />
 					</div>
 				}
-				{ background_gradient && <div className={background_gradient_classname} /> }
+				{ background_gradient && <div className={background_gradient_classname} />}
 			</div>
-		);	
+		);
 	}
 }
 
