@@ -42,7 +42,6 @@ storiesOf('component-library/IconGroup', module)
             <IconGroup
                 title={text('title', 'Icon Group Title')}
                 icons={object('icons', icons)}
-                box_shadow={boolean('box_shadow', true)}
             />
         </div>
     ), {

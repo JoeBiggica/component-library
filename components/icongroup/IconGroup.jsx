@@ -18,7 +18,7 @@ function IconGroup(props) {
         };
 
         return (
-            <div className={styles['icon-container']}>
+            <div className={styles['icon-container']} key={`icon-${index}`}>
                 <div className={styles['icon']} style={icon_style} />
                 {label &&
                     <TextLabel
@@ -39,11 +39,11 @@ function IconGroup(props) {
         icons,
         font,
         box_shadow,
+        border
     } = props;
 
     const container_classname = classnames(
         styles['container'],
-        styles[box_shadow && 'box-shadow'],
         className
     );
 
@@ -71,8 +71,7 @@ IconGroup.propTypes = {
     className: PropTypes.string,
     title: PropTypes.string,
     icons: PropTypes.array,
-    font: PropTypes.oneOf(Object.values(TextLabel.Font)),
-    box_shadow: PropTypes.bool
+    font: PropTypes.oneOf(Object.values(TextLabel.Font))
 }
 
 IconGroup.defaultProps = {

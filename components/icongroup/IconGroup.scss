@@ -3,12 +3,9 @@
 @import 'styles/_eases.scss';
 
 .container {
-
-    &.box-shadow {
-        border-radius: 6px;
-        box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, .15);
-        padding: 15px 15px;
-    }
+    padding: 15px 15px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, .15);
 }
 
 .title {
