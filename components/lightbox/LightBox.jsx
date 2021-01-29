@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
 
 import Close from 'components/icons/close.svg';
 
@@ -14,9 +13,9 @@ function LightBox(props) {
 
 
 	return (
-		<div className={classnames(styles['container'])} onClick={onClick}>
-			<div className={classnames(styles['inner'])}>
-				<Close className={classnames(styles['close'])} />
+		<div className={styles['container']} onClick={onClick}>
+			<div className={styles['inner']}>
+				<Close className={styles['close']} />
 				{children}
 			</div>
 		</div>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import LightBox from 'components/lightbox';
+import LightBoxImage from 'components/lightboximage';
 import SpringImage from 'components/springimage';
 
 import styles from './Gallery.scss';
@@ -45,39 +45,11 @@ export default class Gallery extends Component {
 	}
 
 	closeLightBox = () => {
-		this.setState({ 
-			lightbox_active: false 
+		this.setState({
+			lightbox_active: false
 		});
 		document.body.style['overflow-x'] = '';
 		document.body.style['overflow-y'] = '';
-	}
-
-	renderLightBoxImage = image => {
-		const {
-			url,
-			long_image
-		} = image;
-
-		const image_styles = {
-			backgroundImage: `url(${url})`,
-			backgroundSize: 'contain',
-			backgroundRepeat: 'no-repeat',
-			backgroundPosition: 'center'
-		};
-
-		if (long_image) {
-			return (
-				<div className={classnames(styles['lightbox-image-container'])}>
-					<img src={url} alt={url} />
-				</div>
-			);
-		}
-
-		return (
-			<div className={classnames(styles['lightbox-image-container'])}>
-				<div className={classnames(styles['lightbox-image'])} style={image_styles} />
-			</div>
-		);
 	}
 
 	renderImage = (image, index) => {
@@ -98,7 +70,7 @@ export default class Gallery extends Component {
 
 		if (spring) {
 			return (
-				<div 
+				<div
 					key={`image-${index}`}
 					className={classnames(styles['spring-image-container'])}
 					onClick={() => this.openLightBox(lightbox_image)}
@@ -122,9 +94,9 @@ export default class Gallery extends Component {
 			lightbox_image.long_image = true;
 
 			return (
-				<div 
+				<div
 					key={`image-${index}`}
-					className={classnames(styles['long-image'])} 
+					className={classnames(styles['long-image'])}
 					style={long_image_styles}
 					onClick={() => this.openLightBox(lightbox_image)}
 				/>
@@ -132,10 +104,10 @@ export default class Gallery extends Component {
 		}
 
 		return (
-			<img 
+			<img
 				key={`image-${index}`}
-				src={small_url ? small_url : url} 
-				loading='lazy' 
+				src={small_url ? small_url : url}
+				loading='lazy'
 				onClick={() => this.openLightBox(lightbox_image)}
 			/>
 		);
@@ -153,20 +125,19 @@ export default class Gallery extends Component {
 			lightbox_image
 		} = this.state;
 
-		return(
-			<div 
+		return (
+			<div
 				style={style}
 				className={classnames(styles['container'], className)}
 			>
 				<div className={classnames(styles['image-list'])}>
-					{ images && images.map(this.renderImage) }
+					{images && images.map(this.renderImage)}
 				</div>
-				{ lightbox_active && 
-					<LightBox
+				{ lightbox_active &&
+					<LightBoxImage
+						image={lightbox_image}
 						onClick={() => this.closeLightBox()}
-					>
-						{ this.renderLightBoxImage(lightbox_image) }
-					</LightBox>
+					/>
 				}
 			</div>
 		)

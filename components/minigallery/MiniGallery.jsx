@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import TextLabel from 'components/textlabel';
+import LightBoxImage from 'components/lightboximage';
 
 import styles from './MiniGallery.scss';
 
