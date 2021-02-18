@@ -38,7 +38,7 @@ storiesOf('component-library/MiniGallery', module)
     .addDecorator(centered)
     .addDecorator(withKnobs)
     .add('default', () => (
-        <div style={object('style', { width: '300px' })}>
+        <div style={object('style', { width: '600px' })}>
             <MiniGallery
                 title={text('title', 'Gallery Title')}
                 font={select('font', TextLabel.Font)}

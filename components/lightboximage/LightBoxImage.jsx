@@ -7,6 +7,13 @@ import styles from './LightBoxImage.scss';
 function LightBoxImage(props) {
 
     const renderImage = image => {
+        const image_styles = {
+            backgroundImage: `url(${image.url})`,
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center'
+        };
+
         if (image.long_image) {
             return (
                 <div className={styles['image-container']}>
@@ -26,13 +33,6 @@ function LightBoxImage(props) {
         image,
         onClick
     } = props;
-
-    const image_styles = {
-        backgroundImage: `url(${image.url})`,
-        backgroundSize: 'contain',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center'
-    };
 
     return (
         <LightBox
