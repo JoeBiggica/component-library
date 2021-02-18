@@ -13,6 +13,8 @@
 .images-container {
     // display: grid;
     // grid-template-columns: 1fr 1fr 1fr;
+    // column-gap: 20px;
+    // row-gap: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,4 +26,10 @@
     height: 150px;
     margin-bottom: 20px;
     margin-right: 20px;
+    cursor: zoom-in;
+    transition: .25s filter $easeInOut;
+
+    &:hover {
+        filter: brightness(0.75);
+    }
 }

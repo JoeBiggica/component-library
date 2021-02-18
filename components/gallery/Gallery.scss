@@ -33,6 +33,7 @@
 	img,
 	.long-image {
 		box-shadow: 10px 10px 20px $black;
+		transition: .25s filter $easeInOut;
 
 		&:hover {
 			filter: brightness(0.75);
