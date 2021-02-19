@@ -29,8 +29,16 @@ const images = [
         small_url: 'https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-03-small.png'
     },
     {
-        url: 'https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-03.png',
-        small_url: 'https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-03-small.png'
+        url: 'https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/images/lion-dance/andrew-lion-head.jpg'
+    },
+    {
+        url: 'https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/images/lion-dance/head-banner.jpg'
+    },
+    {
+        url: 'https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/images/lion-dance/school-lions.jpg'
+    },
+    {
+        url: 'https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/images/lion-dance/three-lions.jpg'
     }
 ];
 

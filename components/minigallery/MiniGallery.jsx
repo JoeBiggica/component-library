@@ -37,8 +37,8 @@ function MiniGallery(props) {
         };
 
         const image_styles = {
-            backgroundImage: `url(${small_url})`,
-            backgroundSize: '100%',
+            backgroundImage: `url(${small_url || url})`,
+            backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center'
         };
