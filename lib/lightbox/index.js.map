@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../components/lightbox/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT","sourcesContent":["export { default } from './LightBox';\n"],"file":"index.js"}

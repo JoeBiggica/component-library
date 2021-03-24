@@ -15,6 +15,17 @@ module.exports = async ({ config, mode }) => {
         test: /\.(js|jsx)$/,
         loader: 'babel-loader',
         include: [COMPONENTS_PATH],
+        options: { 
+            presets: [
+                '@babel/preset-env',
+                '@babel/react',
+                {
+                    'plugins': [
+                        '@babel/plugin-proposal-class-properties'
+                    ]
+                }
+            ]
+        }
     });
 
     config.module.rules.push({
@@ -28,6 +39,7 @@ module.exports = async ({ config, mode }) => {
                     modules: true,
                     localIdentName: '[name]__[local]___[hash:base64:5]',
                 },
+                
             },
             'postcss-loader',
             'sass-loader',

@@ -5,11 +5,6 @@ import centered from '@storybook/addon-centered/react';
 import HeroBanner from './HeroBanner';
 import TextLabel from 'components/textlabel';
 
-const black_bg = {
-	name: 'black',
-	value: '#000',
-};
-
 storiesOf('component-library/HeroBanner', module)
 	.addDecorator(centered)
 	.addDecorator(withKnobs)
@@ -30,6 +25,4 @@ storiesOf('component-library/HeroBanner', module)
 				title_logo_alignment={select('title_logo_alignment', HeroBanner.TitleLogoAlignment)}
 			/>
 		</div>
-	), {
-		backgrounds: [black_bg]
-	});
+	));

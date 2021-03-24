@@ -5,23 +5,16 @@ import centered from '@storybook/addon-centered/react';
 
 import ReutersLogo from './ReutersLogo';
 
-const white_bg = {
-	name: 'white',
-	value: '#FFF',
-	default: true,
-};
-
-const black_bg = {
-	name: 'black',
-	value: '#000',
-	default: true,
-};
-
-const rangoon_green_bg = {
-	name: 'rangoon green',
-	value: '#1A1A1A',
-	default: true,
-};
+const bg_values = [
+	{
+		name: 'black', 
+		value: '#000'
+	},
+	{
+		name: 'white', 
+		value: '#fff'
+	}
+];
 
 const logo_style = {
 	width: '350px',
@@ -37,7 +30,10 @@ storiesOf('component-library/reuters/ReutersLogo', module)
 			style={logo_style}
 		/>
 	), {
-		backgrounds: [white_bg]
+		backgrounds: {
+			default: 'white',
+			values: bg_values
+		}
 	})
 	.add('Five rings with Reuters white text', () => (
 		<ReutersLogo
@@ -47,7 +43,10 @@ storiesOf('component-library/reuters/ReutersLogo', module)
 			style={logo_style}
 		/>
 	), {
-		backgrounds: [black_bg]
+		backgrounds: {
+			default: 'black',
+			values: bg_values
+		}
 	})
 	.add('Five rings with Reuters white color', () => (
 		<ReutersLogo
@@ -58,7 +57,10 @@ storiesOf('component-library/reuters/ReutersLogo', module)
 
 		/>
 	), {
-		backgrounds: [black_bg]
+		backgrounds: {
+			default: 'black',
+			values: bg_values
+		}
 	})
 	.add('Five rings with Reuters black color', () => (
 		<ReutersLogo
@@ -68,10 +70,16 @@ storiesOf('component-library/reuters/ReutersLogo', module)
 			style={logo_style}
 		/>
 	), {
-		backgrounds: [white_bg]
+		backgrounds: {
+			default: 'white',
+			values: bg_values
+		}
 	})
 	.add('Five rings icon', () => (
 		<ReutersLogo icon={boolean('icon', true)} style={logo_style} />
 	), {
-		backgrounds: [white_bg]
+		backgrounds: {
+			default: 'white',
+			values: bg_values
+		}
 	});

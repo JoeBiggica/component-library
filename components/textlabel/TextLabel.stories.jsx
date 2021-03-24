@@ -6,15 +6,7 @@ import Checkmark from 'components/icons/checkmark.svg';
 
 import TextLabel from './TextLabel';
 
-
-const black_bg = {
-	name: 'black',
-	value: '#000000',
-	default: true,
-};
-
 const example_text = 'This is the TextLabel text.';
-
 
 storiesOf('component-library/TextLabel', module)
 	.addDecorator(centered)

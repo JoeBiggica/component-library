@@ -4,11 +4,6 @@ import { withKnobs, object, select, text, boolean, color } from '@storybook/addo
 import centered from '@storybook/addon-centered/react';
 import PageHeader from './PageHeader';
 
-const black_bg = {
-	name: 'black',
-	value: '#000',
-};
-
 storiesOf('component-library/PageHeader', module)
 	.addDecorator(centered)
 	.addDecorator(withKnobs)

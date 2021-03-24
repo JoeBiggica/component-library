@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../components/profilecollection/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT","sourcesContent":["export { default } from './ProfileCollection';\n"],"file":"index.js"}

@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../components/socialtools/twitter/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT","sourcesContent":["export { default } from './Twitter';\n"],"file":"index.js"}

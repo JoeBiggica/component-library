@@ -5,16 +5,6 @@ import centered from '@storybook/addon-centered/react';
 import ContactCard from './ContactCard';
 import TextLabel from 'components/textlabel';
 
-const white_bg = {
-	name: 'white',
-	value: '#FFF',
-};
-
-const black_bg = {
-	name: 'black',
-	value: '#000',
-};
-
 storiesOf('component-library/ContactCard', module)
 	.addDecorator(centered)
 	.addDecorator(withKnobs)
@@ -32,6 +22,4 @@ storiesOf('component-library/ContactCard', module)
 				font={select('font', TextLabel.Font)}
 			/>
 		</div>
-	), {
-		backgrounds: [white_bg, black_bg]
-	});
+	));

@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../components/breakpointswitcher/index.js"],"names":["default","BreakpointToggle"],"mappings":"AAAA,SAASA,OAAT,EAAkBC,gBAAlB","sourcesContent":["export { default, BreakpointToggle } from './BreakpointSwitcher';\n"],"file":"index.js"}

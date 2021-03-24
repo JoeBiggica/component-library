@@ -5,16 +5,6 @@ import centered from '@storybook/addon-centered/react';
 import TextCard from './TextCard';
 import TextLabel from 'components/textlabel';
 
-const white_bg = {
-	name: 'white',
-	value: '#FFF',
-};
-
-const black_bg = {
-	name: 'black',
-	value: '#000',
-};
-
 const body_items = [
 	{
 		type: 'paragraph',
@@ -57,6 +47,4 @@ storiesOf('component-library/TextCard', module)
 				font={select('font', TextLabel.Font)}
 			/>
 		</div>
-	), {
-		backgrounds: [white_bg, black_bg]
-	});
+	));

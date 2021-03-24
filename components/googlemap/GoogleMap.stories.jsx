@@ -4,16 +4,6 @@ import { withKnobs, object, select, text, boolean } from '@storybook/addon-knobs
 import centered from '@storybook/addon-centered/react';
 import GoogleMap from './GoogleMap';
 
-const white_bg = {
-	name: 'white',
-	value: '#FFF',
-};
-
-const black_bg = {
-	name: 'black',
-	value: '#000',
-};
-
 const controls = {
 	zoom: false,
 	map_type: false,
@@ -35,6 +25,4 @@ storiesOf('component-library/GoogleMap', module)
 				controls={object('controls', controls)}
 			/>
 		</div>
-	), {
-		backgrounds: [white_bg, black_bg]
-	});
+	));

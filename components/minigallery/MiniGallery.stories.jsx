@@ -5,16 +5,6 @@ import centered from '@storybook/addon-centered/react';
 import MiniGallery from './MiniGallery';
 import TextLabel from 'components/textlabel';
 
-const white_bg = {
-    name: 'white',
-    value: '#FFF',
-};
-
-const black_bg = {
-    name: 'black',
-    value: '#000',
-};
-
 const images = [
     {
         url: 'https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-01.png',
@@ -37,9 +27,6 @@ const images = [
     {
         url: 'https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/images/lion-dance/school-lions.jpg'
     },
-    {
-        url: 'https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/images/lion-dance/three-lions.jpg'
-    }
 ];
 
 storiesOf('component-library/MiniGallery', module)
@@ -53,6 +40,4 @@ storiesOf('component-library/MiniGallery', module)
                 images={object('images', images)}
             />
         </div>
-    ), {
-        backgrounds: [white_bg, black_bg]
-    });
+    ));

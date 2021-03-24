@@ -5,19 +5,18 @@ import centered from '@storybook/addon-centered/react';
 
 import MartialBaseHeader from './MartialBaseHeader';
 
-const white_bg = {
-	name: 'white',
-	value: '#FFF',
-	default: true,
-};
+const bg_values = [
+	{
+		name: 'black', 
+		value: '#000'
+	},
+	{
+		name: 'white', 
+		value: '#fff'
+	}
+];
 
-const black_bg = {
-	name: 'black',
-	value: '#000',
-	default: true,
-};
-
-storiesOf('component-library/martialbase/MartialBaseHeader', module)
+storiesOf('MartialBase/MartialBaseHeader', module)
 	.addDecorator(withKnobs)
 	.addDecorator(centered)
 	.add('default', () => (
@@ -28,5 +27,8 @@ storiesOf('component-library/martialbase/MartialBaseHeader', module)
 			nav_alignment={MartialBaseHeader.NavAlignment.RIGHT}
 		/>
 	), {
-		backgrounds: [white_bg]
+		backgrounds: {
+			default: 'white',
+			values: bg_values
+		}
 	})

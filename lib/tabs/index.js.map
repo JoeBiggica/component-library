@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../components/tabs/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT","sourcesContent":["export { default } from './Tabs';\n"],"file":"index.js"}

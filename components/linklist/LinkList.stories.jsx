@@ -5,16 +5,6 @@ import centered from '@storybook/addon-centered/react';
 import LinkList from './LinkList';
 import TextLabel from 'components/textlabel';
 
-const white_bg = {
-    name: 'white',
-    value: '#FFF',
-};
-
-const black_bg = {
-    name: 'black',
-    value: '#000',
-};
-
 const links = [
     {
         url: 'https://www.fongshungga.com',
@@ -50,6 +40,4 @@ storiesOf('component-library/LinkList', module)
                 link_color={select('link_color', TextLabel.Color)}
             />
         </div>
-    ), {
-        backgrounds: [white_bg, black_bg]
-    });
+    ));

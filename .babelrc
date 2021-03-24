@@ -110,6 +110,7 @@
         ],
         "@babel/plugin-proposal-class-properties",
         "@babel/plugin-proposal-export-default-from",
+        "@babel/plugin-syntax-jsx",
         "inline-react-svg",
       ],
     },

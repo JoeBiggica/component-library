@@ -5,16 +5,6 @@ import centered from '@storybook/addon-centered/react';
 import IconGroup from './IconGroup';
 import TextLabel from 'components/textlabel';
 
-const white_bg = {
-    name: 'white',
-    value: '#FFF',
-};
-
-const black_bg = {
-    name: 'black',
-    value: '#000',
-};
-
 const icons = [
     {
         url: 'https://i.imgur.com/mcheorE.png?1',
@@ -44,6 +34,4 @@ storiesOf('component-library/IconGroup', module)
                 icons={object('icons', icons)}
             />
         </div>
-    ), {
-        backgrounds: [white_bg, black_bg]
-    });
+    ));

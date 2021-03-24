@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../components/tabswitcher/index.js"],"names":["default","ClickableTab","HoverableTab","TabPanel"],"mappings":"AAAA,SACCA,OADD,EAECC,YAFD,EAGCC,YAHD,EAICC,QAJD","sourcesContent":["export {\n\tdefault,\n\tClickableTab,\n\tHoverableTab,\n\tTabPanel,\n} from './TabSwitcher';\n"],"file":"index.js"}

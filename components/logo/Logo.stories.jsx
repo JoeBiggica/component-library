@@ -5,12 +5,6 @@ import centered from '@storybook/addon-centered/react';
 
 import Logo from './Logo';
 
-const white_bg = {
-	name: 'white',
-	value: '#FFF',
-	default: true,
-};
-
 storiesOf('component-library/Logo', module)
 	.addDecorator(withKnobs)
 	.addDecorator(centered)
@@ -23,6 +17,4 @@ storiesOf('component-library/Logo', module)
 				height: '100px'
 			})}
 		/>
-	), {
-		backgrounds: [white_bg]
-	});
+	));

@@ -5,23 +5,22 @@ import centered from '@storybook/addon-centered/react';
 
 import MartialBaseLogo from './MartialBaseLogo';
 
-const white_bg = {
-	name: 'white',
-	value: '#FFF',
-	default: true,
-};
-
-const black_bg = {
-	name: 'black',
-	value: '#000',
-	default: true,
-};
-
 const logo_style = {
 	width: '350px',
 };
 
-storiesOf('component-library/martialbase/MartialBaseLogo', module)
+const bg_values = [
+	{
+		name: 'black', 
+		value: '#000'
+	},
+	{
+		name: 'white', 
+		value: '#fff'
+	}
+];
+
+storiesOf('MartialBase/MartialBaseLogo', module)
 	.addDecorator(withKnobs)
 	.addDecorator(centered)
 	.add('White', () => (
@@ -32,7 +31,10 @@ storiesOf('component-library/martialbase/MartialBaseLogo', module)
 			style={logo_style}
 		/>
 	), {
-		backgrounds: [black_bg]
+		backgrounds: {
+			default: 'black',
+			values: bg_values
+		}
 	})
 	.add('Black', () => (
 		<MartialBaseLogo
@@ -42,5 +44,8 @@ storiesOf('component-library/martialbase/MartialBaseLogo', module)
 			style={logo_style}
 		/>
 	), {
-		backgrounds: [white_bg]
+		backgrounds: {
+			default: 'white',
+			values: bg_values
+		}
 	});
