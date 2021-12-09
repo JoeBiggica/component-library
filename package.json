@@ -21,7 +21,7 @@
 	"homepage": "https://github.com/JoeBiggica/component-library#readme",
 	"dependencies": {
 		"intersection-observer": "^0.12.0",
-		"next": "10.0.5",
+		"next": "11.1.3",
 		"react": "^16.8.0",
 		"react-dom": "^16.8.0",
 		"react-spring": "^8.0.27",
